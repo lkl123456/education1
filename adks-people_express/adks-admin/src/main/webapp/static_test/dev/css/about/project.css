@@ -1,0 +1,24 @@
+/*项目规范*/
+.container{padding-bottom:20px;}
+p{color:#333;font-size:14px;line-height:25px;margin-bottom:5px;}
+dl dd,dl ul li{line-height:25px;font-size:13px;color:#333;margin-bottom:5px;}
+dl dd{background:asset-url("20.gif") no-repeat left 9px;padding-left:16px;margin:0 30px 5px 30px;}
+dl dt{color:#72A40F;font-size:18px;margin:30px 0 10px 0;}
+dl dd.c4{background:none;}
+dl ul li a{color:#669900;}
+dl ul li a:hover{color:#99cc00;}
+.container .content{margin-bottom:20px;}
+.content p a{color:#669900;}
+.content p a:hover{color:#99cc00;}
+.content h4{color:#72A40F;font-size:14px;margin:10px 0 5px 0;}
+table{width:100%;}
+.c21,.c23{overflow:hidden;}
+.c21 tr,.c23 tr{height:30px;border-right:none;}
+.c21 tr td{width:25%;}
+.c21 tr td,.c23 tr td{height:30px;background:#f8f8f8;border:solid 1px #fff;text-align:center;font-size:12px;}
+.c21 tr td.c22,.c23 tr td.c22{background:#eee;}
+
+
+.c23 tr td{width:33.3%;}
+.c23 tr td.c24,.c21 tr td.c24{background:#aaa;color:#fff;font-size:14px;}
+

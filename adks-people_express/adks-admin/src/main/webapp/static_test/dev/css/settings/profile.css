@@ -1,0 +1,24 @@
+
+/*个人资料开始*/
+.settings{background:#e6e6e6;}
+.container{background:#fff;}
+.settings .l1{width:690px;height:auto;float:left;margin:15px 0;}
+.form li>div{width:490px;}
+.form li>div p{color:#999;}
+.form li>div span{display:inline-block;line-height:29px;margin-right:5px;}
+.form li>div input{width:240px;}
+.form li>div textarea{width:542px;height:92px;}
+.form li{border-bottom:solid 1px #e6e6e6;}
+.form li label{width:90px;height:29px;line-height:29px;}
+.form .button{margin:20px 0 20px 100px;}
+
+/**个人资料-右边内容*/
+.l2{width:240px;float:right;margin:15px 0;}
+.l2 div{width:130px;float:left;}
+.l2 div img{display:block;margin:5px 0 10px 0;max-width:130px;}
+.l2 label{width:90px;height:29px;line-height:29px;display:block;float:left;text-align:right;font-size:13px;color:#333;margin-right:10px;}
+.l2 a{color:#669900;display:block;font-size:13px;}
+.l2 a:hover{color:#99cc00;}
+.l2 .swfupload-progress{font-size:13px;color:#333;}
+/*个人资料结束*/
+

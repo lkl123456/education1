@@ -1,0 +1,23 @@
+/*常见问题*/
+.content .c3{margin:5px 0 15px 0;}
+.content ul.c6{float:left;width:286px;}
+.content ul.c6 li{line-height:20px;padding:5px 12px 15px 0;font-size:18px;}
+.content ul.c6 li a{font-size:14px;color:#669900;margin-bottom:10px;}
+.content ul.c6 li a:hover{color:#99cc00;}
+.content ul.c6 li.c6 a{font-size:18px;color:#333;}
+.content ul.c4{margin-left:51px;display:inline;}
+.content ul.c5{float:right;}
+.container .content{margin-bottom:20px;}
+.l1{width:690px;float:left;}
+.l2{width:240px;float:right;}
+.l1 p,.l1 ul li{font-size:14px;line-height:25px;margin-bottom:5px;overflow:hidden;color:#333;}
+.l1 p.c1{margin:30px 0 10px 0;font-size:18px;color:#669900;}
+.l1 a{color:#669900;}
+.l1 p.c1:hover,.l1 a:hover{color:#99cc00;}
+.l1 p.c2{margin-top:0px;}
+.l1 ul{margin:6px 30px 15px 30px;}
+.l1 ul li{background:asset-url("20.gif") no-repeat left 9px;padding-left:16px;}
+
+.l2 h4{font-size:21px;color:#000;margin-bottom:20px;}
+.l2 a{color:#888;font-size:14px;margin:10px 0 15px 0;display:block;}
+.l2 a:hover{color:#666;}

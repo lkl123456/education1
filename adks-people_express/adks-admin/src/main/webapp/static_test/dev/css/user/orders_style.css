@@ -1,0 +1,17 @@
+
+/*导入application.css开始*/
+@import url("../common/application.css");
+/*导入application.css结束*/
+
+
+/*导入orders.css开始*/
+@import url("../user/orders.css");
+/*导入orders.css结束*/
+
+/*导入common.css开始*/
+@import url("../common/common.css");
+/*导入common.css结束*/
+
+
+
+

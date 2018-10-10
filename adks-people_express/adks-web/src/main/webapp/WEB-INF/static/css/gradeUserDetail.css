@@ -1,0 +1,68 @@
+.all1{ width:1000px; padding:25px 17px; background:#f9fbfc; margin:0 auto 20px; border:#c4cfd6 solid 1px; border-top:#1b5a94 solid 4px;}
+.lv{ color:#419933}
+.all_top{ height:122px; margin-bottom:25px; position:relative;}
+.all_top img{ float:left; margin-right:20px;}
+.all_top p{ font-size:24px; line-height:32px; padding-bottom:15px;}
+.qing{ background:none}
+.all_top div{ font-size:14px; line-height:24px;}
+.all_top a{ height:34px; line-height:34px; text-align:center; background:url(../images/index.png) 0px -2350px repeat-x; width:96px; font-size:14px; font-weight:bold; color:#fff; position:absolute; right:0; top:88px; }
+.all_main{ background:#FFF; padding:22px 20px 2px;  border:#c4cfd6 solid 1px;}
+.huan1{ padding:0 0 20px;}
+.huan1 .heji{ background:url(../images/index.png) 0 -2250px repeat-x; color:#FFF; font-weight:bold; padding:0}
+.header_mian_3 { position:relative}
+.header_mian_3 img{ position:absolute; left:20px; top:35px; padding:3px; background:rgba(255,255,255,0.5); background:#7285ae\9; border-radius:3px;}
+.header_mian_3 p{ font-size:24px; line-height:30px; position:absolute; left:128px; top:51px; color:#FFF}
+.header_mian_3  div{ font-size:12px; line-height:14px; position:absolute; left:295px; top:65px; color:#FFF}
+.header_mian_3 span{ color:#FFF; line-height:20px; font-size:14px; position:absolute; left:128px; top:95px;}
+.header_mian_3  div a{ color:#FFF}
+.mi{ position:absolute; left:229px; top:0}
+
+.mi_r5 div{ padding-bottom:0}
+.mi_r2 ol{ width:120%; overflow:hidden; padding-top:16px;}
+.mi_r2 ol li{ width:150px; position:relative; float:left; margin:0px 35px 0px 0; height:175px;}
+.mi_r2 ol li a{ width:150px; height:100px; display:block; position:relative}
+.mi_r2 ol li a span{ background:url(../images/touming.png) repeat; height:19px; line-height:19px; font-size:12px; color:#FFF; width:145px; padding-right:5px; position:absolute; left:0; bottom:0; text-align:right;}
+.mi_r2 ol li .jidu{ height:5px; padding:0; background:#CCC;}
+.mi_r2 ol li .jidu div{ padding:0; height:5px; background:#ef5b19; }
+.mi_r2 ol li p{ height:20px; line-height:20px; padding-top:7px; font-size:12px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#333;}
+.mi_r2 ol li b{ font-weight:normal; padding-left:20px; line-height:22px; font-size:12px; color:#999; background:url(../images/index.png) 0px -2448px no-repeat;}
+.mi_r2 ol li strong{ position:absolute; display:none; right:-12px; cursor:pointer; z-index:99; top:-10px; background:url(../images/index.png) 0px -2400px no-repeat; width:24px; height:24px;}
+.bgnc{ z-index:10000; display:none; width:100%; height:100%; position:fixed; left:0; top:0; background:url(../images/touming.png) repeat; }
+.bg_biao{ position:fixed; left:-400px; width:800px; margin-left:50%; top:302px; background:#fff}
+.bg_biao dt{ height:41px; position:relative; background:url(../images/index.png) 0px -750px repeat-x; font-size:16px; padding-left:20px; line-height:40px;}
+.bg_biao dt b{ background:url(../images/index.png) 0px -700px no-repeat; cursor:pointer; position:absolute; right:20px; top:10px; width:20px; height:20px;}
+.bg_biao dd{ padding:18px 20px 22px;}
+.zaikao{ height:27px; margin-top:20px; position:relative;}
+.zaikao a{ position:absolute; height:25px; line-height:25px; width:73px; text-align:center; border:#b8c1c9 solid 1px; background:url(../images/index.png) 0px -300px repeat-x; font-size:12px; cursor:pointer; right:338px; top:0px;  color:#46525f}
+.zaikao .kaoshi_1{ right:417px;}
+.bg_biao1 dt{ padding-left:82px;}
+.bg_biao1 dt .lv{ background:url(../images/jiao.gif) no-repeat; width:66px; padding-left:10px; line-height:40px; z-index:99; color:#FFF; height:41px; position:absolute; left:0; top:0;}
+.long ul{  height:47px; width:110%; position:relative; left:-1px;}
+.long ul li{ float:left; width:82px; text-align:center; height:47px; border-left:#95a8ac solid 1px;}
+.long ul li p{ font-size:12px; padding-bottom:12px; line-height:14px; height:16px; color:#333;}
+.long ul li div{ font-size:18px;  line-height:20px; height:20px;}
+.long ul li div span{ color:#999; font-size:12px; font-family:"ËÎÌå"}
+.header_mian1 .header_tianjia{ height:30px; overflow:hidden; position:absolute; left:410px; top:145px;}
+.header_mian1 .header_tianjia input{ float:left; margin-right:5px; cursor:pointer; background:url(../images/zhuom2.png) no-repeat; border:none; width:107px; height:30px;}
+.header_mian1 .header_tianjia .inp_1{ background:url(../images/zhuom1.png) no-repeat; width:112px;}
+.header_mian1 img{ position:absolute; left:455px; top:10px; border-radius:50%; border:#abacc1 solid 3px;}
+.header_mian1 .header_bt{ height:30px; line-height:30px; font-size:24px; position:absolute; width:1000px; color:#FFF; top:100px; text-align:center;}
+
+.long .hea_jfe{ background:url(../images/index.png) 65px -350px no-repeat}
+.mainnq{ background:url(../images/baitoa.gif) repeat-y}
+
+.main_topc dd{ background:url(../images/ti_11.jpg) 27px 30px no-repeat; height:325px; padding:30px 27px 0 343px;}
+.main_topc dd ul li{ height:54px; line-height:54px; border-bottom:#ccc dotted 1px; font-size:14px; position:relative;}
+.main_topc dd ul li b{ font-size:18px; font-family:"Î¢ÈíÑÅºÚ";}
+.main_topc dd ul li span{ position:absolute; line-height:54px; top:0; left:110px;}
+.dikao{ margin-top:40px; height:57px;}
+.tidiao{ background:url(../images/ti_12.jpg) no-repeat; height:57px; width:254px; float:left}
+.xcizl{ float:right; width:166px; height:57px; background:url(../images/ti_13.jpg) no-repeat;}
+.kqbd dt{ border-bottom:#d9e0e6 solid 1px; margin-top:20px; height:40px; background:url(../images/index.png) 0px -848px no-repeat; }
+.kqbd dt b{ padding-left:20px; padding-right:5px; border-bottom:#3e72a3 solid 3px; float:left; height:38px; line-height:38px; font-size:14px; color:#3e72a3; }
+.kqbd dd li{ background:url(../images/index.png) 0px -636px no-repeat; line-height:30px; padding-left:13px; color:#46525f; font-size:14px;}
+.kqbd{ margin:0px 27px; }s
+.kqbd dd{ margin:16px 0 75px;}
+.mainaa{ width:800px;font-family:"Î¢ÈíÑÅºÚ";  margin:3px auto 10px; border:#e5e9eb solid 13px;}
+.bod1{ background:none}
+.main_topc dt{ background:url(../images/index.png) 0px -734px repeat-x; font-weight:bold; text-align:center; height:50px; padding-top:7px; line-height:50px; font-size:18px;}

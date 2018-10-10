@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<!-- 配置dubbo 远程调用service -->
+
+	<dubbo:application name="adks-spcrm" />
+
+	<dubbo:registry address="${dubbo.zookeeper.url}" />
+	
+	<dubbo:reference id="webCourseUserApi"
+		interface="com.adks.dubbo.api.interfaces.web.course.CourseUserApi" />
+
+</beans>

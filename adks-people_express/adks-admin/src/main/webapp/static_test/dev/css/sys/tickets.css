@@ -1,0 +1,17 @@
+body{background:#e6e6e6;}
+.container{background:#fff;}
+/*表格*/
+.c30 tr td{line-height:18px;}
+.c30 .c1{width:120px;}
+.c30 .c2{width:360px;text-align:left;}
+.c30 .c3{width:210px;text-align:left;}
+.c30 .c4{width:100px;}
+.c30 .c5{width:100px;}
+.c30 .c7{text-align:left;}
+.c30 .c8{text-align:left;}
+.c30 .c7 a{color:#669900;}
+.c30 .c7 a:hover{color:#99cc00;}
+.c30 span{color:#999;}
+.empty{margin-top:-20px;}
+.flash{margin:0 0 20px 0;}
+.accepted{color:#ee0000}

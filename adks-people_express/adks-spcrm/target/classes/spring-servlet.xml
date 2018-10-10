@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+
+	<!-- ########  SpringMVC配置    ############ -->
+	<!-- 自动搜索@Controller标注的类，包括其下面的子包 -->  
+	<context:component-scan base-package="com.sd.spcrm.ctrl"></context:component-scan>
+	
+	<!-- 返回json 方法一 -->
+	<mvc:annotation-driven>
+		<mvc:message-converters register-defaults="false">
+			<bean id="fastJsonHttpMessageConverter"
+				class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+						<value>application/json;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<!-- 配置处理静态资源的请求 -->
+	<mvc:resources location="/" mapping="/**" />
+	
+	
+	<!-- 配置视图解析器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".shtml" /><!--可为空,方便实现自已的依据扩展名来选择视图解释类的逻辑 -->
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+	</bean>
+	
+	<!-- 定时任务-清理courseJsonMap.size -->
+	<bean id="mythreadtimersize" class="com.sd.spcrm.webconfig.MyThreadTimerSize"  
+		  abstract="false"  lazy-init="default" autowire="default"/>  
+    
+    <bean id="mythreadtimersizeDetail"  
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="mythreadtimersize" />  
+        <property name="targetMethod" value="startRun" />  
+        <property name="concurrent" value="false" />  
+    </bean>
+      
+    <bean id="mythreadtimersizeTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">  
+        <!-- 配置执行的类 -->  
+        <property name="jobDetail" ref="mythreadtimersizeDetail" />  
+        <!-- 启动服务后5秒后运行 -->  
+        <property name="startDelay" value="5000" />  
+        <!-- 每隔10秒运行一次 -->
+        <property name="repeatInterval" value="10000" />  
+    </bean>  
+    
+    <!-- 定时任务-30自动清理一次courseJsonMap -->
+	<bean id="mythreadtimerall" class="com.sd.spcrm.webconfig.MyThreadTimerAll"  
+		  abstract="false"  lazy-init="default" autowire="default"/>
+		  
+    <bean id="mythreadtimerallDetail"  
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="mythreadtimerall" />  
+        <property name="targetMethod" value="startRun" />  
+        <property name="concurrent" value="false" />  
+    </bean>  
+    <bean id="mythreadtimerallTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">  
+        <!-- 配置执行的类 -->  
+        <property name="jobDetail" ref="mythreadtimerallDetail" />  
+        <!-- 启动服务后10秒后运行 -->  
+        <property name="startDelay" value="10000" />  
+        <!-- 每隔30秒运行一次 -->
+        <property name="repeatInterval" value="30000" />  
+    </bean>
+    
+    <!-- 定时任务-心跳检测 -->
+	<bean id="mythreadheartbeat" class="com.sd.spcrm.webconfig.HeartBeatTimer"  
+		  abstract="false"  lazy-init="default" autowire="default"/>
+		  
+    <bean id="mythreadheartbeatDetail"  
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="mythreadheartbeat" />  
+        <property name="targetMethod" value="startRun" />  
+        <property name="concurrent" value="false" />  
+    </bean>  
+    <bean id="mythreadheartbeatTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">  
+        <!-- 配置执行的类 -->  
+        <property name="jobDetail" ref="mythreadheartbeatDetail" />  
+        <!-- 启动服务后5秒后运行 -->  
+        <property name="startDelay" value="5000" />  
+        <!-- 每隔5秒运行一次 -->
+        <property name="repeatInterval" value="5000" />  
+    </bean>
+  
+    <!-- 总调度用于启动Spring定时器 -->  
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+        <property name="triggers">  
+            <list>  
+                <ref bean="mythreadtimersizeTrigger" />  
+                <ref bean="mythreadtimerallTrigger" />
+                <ref bean="mythreadheartbeatTrigger" />
+            </list>  
+        </property>  
+    </bean> 
+	<!-- 全局异常处理 -->
+	<bean id="exceptionResolver"
+	class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="java.lang.Exception">ex</prop>
+			</props>
+		</property>
+		<property name="warnLogCategory">
+			<value>org.springframework.web.servlet.handler.SimpleMappingExceptionResolver</value>
+		</property>
+	</bean>
+</beans>

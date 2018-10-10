@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<mvc:view-controller path="/"
+		view-name="redirect:/index/index/1.shtml" />
+	<bean id="beanFactory" class="com.adks.commons.context.BeanFactory" />
+
+	<bean class="com.adks.web.util.SpringContextHolder" />
+
+	<bean id="messageConfig" class="com.adks.web.util.BaseFrameworkConfig">
+		<property name="location" value="/WEB-INF/classes/messageConfig.properties"></property>
+	</bean>
+
+	<bean id="configProperties"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			<list>
+				<value>classpath:adksDbClient.properties</value>
+				<value>classpath:config.properties</value>
+				<value>classpath:dubbo.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="properties" ref="configProperties" />
+	</bean>
+
+
+	<context:component-scan base-package="com.adks.web" />
+
+	<!-- Configures Spring MVC -->
+	<import resource="classpath:adksMultitenantMysql.xml" />
+	<import resource="classpath:adksRedis.xml" />
+	<import resource="classpath:dubbo-config.xml" />
+
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<!-- 定时任务 定时清理在线用户 Start -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		autowire="no">
+		<property name="triggers">
+			<list>
+				<ref bean="testTrigger" />
+			</list>
+		</property>
+		<property name="autoStartup" value="true" />
+	</bean>
+	<bean id="testTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="testJobDetail" />
+		<property name="cronExpression" value="0 0 5 * * ?" />
+	</bean>
+	<bean id="testJobDetail"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="testJob" />
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+	<bean id="testJob" class="com.adks.web.framework.timer.MyTimerCleanUserOnline" />
+	<!-- 定时任务 定时清理在线用户 End -->
+
+</beans>

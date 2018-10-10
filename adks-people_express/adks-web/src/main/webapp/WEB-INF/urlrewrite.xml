@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+
+<urlrewrite>
+	<!-- 首页 -->
+	<rule>
+		<from>^/index/index/([0-9]+).shtml$</from>
+	    <to>/index/index.do?orgId=$1</to>
+	</rule>
+	<!-- 首页 -->
+	<rule>
+		<from>^/index/mhj.shtml$</from>
+	    <to>/index/mhj.do</to>
+	</rule>
+	<!-- 首页 -->
+	<rule>
+		<from>^/index/kgj.shtml$</from>
+	    <to>/index/kgj.do</to>
+	</rule>
+	<rule>
+		<from>^/login.shtml</from>
+	    <to>/login.jsp</to>
+	</rule>
+	<rule>
+		<from>^/user/toLogin/([0-9]+).shtml</from>
+	    <to>/user/toLogin.do?orgId=$1</to>
+	</rule>
+	<!-- 退出 -->
+	<rule>
+		<from>^/user/loginOut/([0-9]+).shtml</from>
+	    <to>/user/loginOut.do?orgId=$1</to>
+	</rule>
+	<!-- 新闻 -->
+	<rule>
+		<from>^/cms/newsIndex/([0-9]+)/([0-9]+).shtml$</from>
+	    <to>/cms/newsIndex.do?newsSortId=$1&amp;orgId=$2</to>
+	</rule>
+	<!-- 新闻资讯-内容页 -->
+	<rule>
+		<from>^/cms/newsIndex/([0-9]+)_([0-9]+)_([0-9]+)/([0-9]+).shtml$</from>
+		<to>/cms/newsIndex.do?newsId=$1&amp;newsSortId=$2&amp;newsSortType=$3&amp;orgId=$4</to>
+	</rule>
+	<!-- 课程中心 -->
+	<rule>
+		<from>^/course/courseIndex/([0-9]+).shtml$</from>
+		<to>/course/courseIndex.do?orgId=$1</to>
+	</rule>
+	<!-- 课程分类点击 -->
+	<rule>
+		<from>^/course/courseIndex/catalogType/([0-9]+)/([0-9]+).shtml$</from>
+		<to>/course/courseIndex.do?catalogType=$1&ampt;orgId=$2</to>
+	</rule>
+	<!-- 课程搜索 -->
+	<rule>
+		<from>^/course/courseIndex/searchKey/([0-9a-zA-Z.]+)/([0-9]+).shtml$</from>
+		<to>/course/courseIndex.do?searchKey=$1&ampt;orgId=$2</to>
+	</rule>
+	
+	<!-- 课程详情 -->
+	<rule>
+		<from>^/course/courseInfo/([0-9]+)/([0-9]+).shtml$</from>
+	    <to>/course/courseInfo.do?courseId=$1&amp;orgId=$2</to>
+	</rule>
+	
+	<!-- 师资库 -->
+	<rule>
+		<from>^/author/allAuthor.shtml$</from>
+		<to>/author/allAuthor.do</to>
+	</rule>
+	<!-- 师资库-分类搜索 -->
+	<rule>
+		<from>^/author/allAuthor/([0-9]+)_([0-9]+).shtml$</from>
+		<to>/author/allAuthor.do?org=$1&amp;letter=$2</to>
+	</rule>
+	<!-- 师资库-内容页 -->
+	<rule>
+		<from>^/author/authorInfo/([0-9]+)/([0-9]+).shtml$</from>
+		<to>/author/authorInfo.do?authorId=$1&amp;orgId=$2</to>
+	</rule>
+	<!-- 专题 -->
+	<rule>
+		<from>^/cms/subjectIndex.shtml$</from>
+		<to>/cms/subjectIndex.do</to>
+	</rule>
+	<!-- 帮助中心 -->
+	<rule>
+		<from>^/index/onlineHelp/([a-z]+)/([0-9]+).shtml$</from>
+		<to>/index/onlineHelp.do?flag=$1&amp;orgId=$2</to>
+	</rule>
+	<!-- 在线反馈 -->
+	<rule>
+		<from>^/user/feedbackIndex/([0-9]+).shtml$</from>
+		<to>/user/feedbackIndex.do?orgId=$1</to>
+	</rule>
+	<!-- 学习支持 -->
+	<rule>
+		<from>^/index/contactUs/([0-9]+).shtml$</from>
+		<to>/index/contactUs.do?orgId=$1</to>
+	</rule>
+	<!-- 下载 -->
+	<rule>
+		<from>^/index/downloadIndex.shtml$</from>
+		<to>/index/downloadIndex.do</to>
+	</rule>
+	<!-- 更多应急课程 -->
+	<rule>
+		<from>^/index/emergencyIndex.shtml$</from>
+		<to>/index/emergencyIndex.do</to>
+	</rule>
+	
+	<!-- 更多排行 -->
+	<rule>
+		<from>^/index/phIndex/([0-9]+).shtml$</from>
+		<to>/index/phIndex.do?orgId=$1</to>
+	</rule>
+	<!-- 个人空间 -->
+	<rule>
+		<from>^/index/toCenter/([0-9]+).shtml$</from>
+		<to>/index/toCenter.do?orgId=$1</to>
+	</rule>
+	<rule>
+		<from>^/index/centerIndex/([0-9]+).shtml$</from>
+		<to>/index/centerIndex.do?orgId=$1</to>
+	</rule>
+	<!-- 前台培训班报名 -->
+	<rule>
+		<from>^/registGrade/toRegisterGradeList/([0-9]+).shtml$</from>
+		<to>/registGrade/toRegisterGradeList.do?orgId=$1</to>
+	</rule>
+	<rule>
+		<from>^/registGrade/registerGradeList/([0-9]+).shtml$</from>
+		<to>/registGrade/registerGradeList.do?orgId=$1</to>
+	</rule>
+	<rule>
+		<from>^/registGrade/registerGrade/([0-9]+)/([0-9]+).shtml$</from>
+		<to>/registGrade/registerGrade.do?gradeId=$1&ampt;orgId=$2</to>
+	</rule>
+	<!-- 移动端 -->
+	<rule>
+		<from>^/index/download/([0-9]+).shtml$</from>
+	    <to>/index/download.do?orgId=$1</to>
+	</rule>
+	<!-- 找回密码 -->
+	<rule>
+		<from>^/index/findPwd/([0-9]+).shtml$</from>
+		<to>/index/findPwd.do?orgId=$1</to>
+	</rule>
+</urlrewrite>
+

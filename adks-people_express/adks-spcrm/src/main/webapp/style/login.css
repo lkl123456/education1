@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*--登录--*/
+.l_main{height:665px; background:#fff url(../images/login_bg.png) left bottom no-repeat; background-size:100%; position:relative;}
+.l_main .line{width:1px; background:#ddd; height:394px; position:absolute; top:30px; left:630px}
+.l_main .l_side{width:380px;}
+.l_main .l_side ul{padding-top:10px;}
+.l_main .l_side ul li{padding:10px 0 10px 10px; zoom:1; overflow:hidden;}
+.l_main .l_side ul li p{color:#ff0000; padding-top:10px;}
+.l_main .l_side ul .input1{ overflow:hidden;}
+.l_main .l_side ul .input1 .input_t1{background:url(../images/in1bg.gif) 12px 12px no-repeat; width:318px; height:40px; padding-left:40px; line-height:40px;}
+.l_main .l_side ul .input1 .input_t2{background:url(../images/in2bg.gif) 12px 14px no-repeat; width:318px; height:40px; padding-left:40px; line-height:40px;}
+.l_main .l_side ul .input1 .input_t3{background:url(../images/in3bg.gif) 12px 14px no-repeat; width:194px; height:40px; padding-left:40px; line-height:40px;}
+.l_main .l_side ul .input1 img{width:113px; height:42px; margin-left:10px;}
+.l_main .l_side ul .btn{width:360px; height:48px; line-height:48px; background:#1bb674; text-align:center; color:#fff; border:none;}
+.l_main .l_side ul .btn:hover{background:#20c981;}
+.l_main .r_side{width:340px;}
+.l_main .r_side a{background:#55afe3; width:340px; height:44px; line-height:44px; text-align:center; color:#fff; display:block; border-radius:4px;}
+.l_main .r_side a:hover{color:#fff; background:#61bbef;}
+
+/*--注册--*/
+.r_main{position:relative; height:auto; zoom:1; overflow:hidden; background:#fff; padding-bottom:30px;}
+.r_main .line{width:1px; background:#ddd; height:703px; position:absolute; top:30px; left:670px}
+.r_main .l_side{width:580px;}
+.r_main .l_side ul{padding-top:10px;}
+.r_main .l_side ul li{padding:10px 0 10px 10px;}
+.r_main .l_side ul li p{color:#ff0000; padding-left:85px; padding-top:5px;}
+.r_main .l_side ul li label{display:inline-block; width:70px; font-size:14px; text-align:right; float:left; margin-right:15px; height:40px;line-height:40px;}
+.r_main .l_side ul .input1{ overflow:hidden;}
+.r_main .l_side ul .input1 select{height:40px; line-height:40px; border:1px solid #ccc;}
+.r_main .l_side ul .input1 .input_t1{width:355px; padding-left:5px; height:40px;line-height:40px;}
+.r_main .l_side ul .input1 .input_t2{width:100px; padding-left:5px; height:40px;line-height:40px;}
+.r_main .l_side ul .btn{width:360px; height:48px; line-height:48px; background:#1bb674; text-align:center; color:#fff; border:none; margin-left:85px;}
+.r_main .l_side ul .btn:hover{background:#20c981;}
+.r_main .r_side{width:340px;}
+.r_main .r_side a{background:#55afe3; width:340px; height:44px; line-height:44px; text-align:center; color:#fff; display:block; border-radius:4px;}
+.r_main .r_side a:hover{color:#fff; background:#61bbef;}
+
+
+/*--找回密码--*/
+.password_main{position:relative; height:auto; zoom:1; overflow:hidden; background:#fff; padding-bottom:60px; border:1px solid #ddd; width:600px; margin:20px auto;}
+.password_main h2{padding:50px 0 10px 0; text-align:center; font-size:24px;}
+.password_main ul{padding-top:10px; padding-left:50px;}
+.password_main ul li{padding:10px 0 10px 10px;}
+.password_main ul li p{color:#ff0000; padding-left:85px; padding-top:5px;}
+.password_main ul li label{display:inline-block; width:70px; font-size:14px; text-align:right; float:left; margin-right:15px; height:40px;line-height:40px;}
+.password_main ul .input1{ overflow:hidden;}
+.password_main ul .input1 select{height:40px; line-height:40px; border:1px solid #ccc;}
+.password_main ul .input1 .input_t1{width:355px; padding-left:5px; height:40px;line-height:40px;}
+.password_main ul .input1 .input_t2{width:200px; padding-left:5px; height:40px;line-height:40px;}
+.password_main ul .btn{width:360px; height:48px; display:inline-block; line-height:48px; background:#1bb674; text-align:center; color:#fff; border:none; margin-left:85px; border-radius:4px;}
+.password_main ul .btn:hover{background:#20c981;}
+.password_main ul .btn1{width:145px; height:42px; line-height:42px; background:#fff; border:1px solid #1bb674; text-align:center; color:#1bb674; margin-left:10px; border-radius:4px;}
+.password_main ul .btn1:hover{background:#20c981; color:#fff;}
+.password_main a.btn{width:360px; height:48px; display:inline-block; line-height:48px; background:#1bb674; text-align:center; color:#fff; border:none; border-radius:4px;}
+.password_main a.btn:hover{background:#20c981;}
+
+
+
+
+.yonhu_xy_div{ width:920px;  height:500px; border:#ccc solid 1px; top:150px; background:#fff; position:fixed; margin-left:50%; left:-460px;}
+.yonhu_xy{display: none; background:url(../images/zzzzz.png) repeat; z-index:999999; left:0; top:0; width:100%; height:100%; position:fixed;}
+.yonhu_xy_div dl dt{ height:28px; font-size:14px; background:#f3f3f3; border-bottom:#ddd solid 1px; font-weight:bold; padding-left:12px; position:relative; line-height:28px;}
+.yonhu_xy_div dl dd{ padding:10px; overflow:auto; height:360px;}
+.yonhu_xy_div div{ position:relative; text-align:center; margin-top:20px;}
+
+.yonhu_xy_div div .btn{width:360px; height:48px; display:inline-block; line-height:48px; background:#1bb674; text-align:center; color:#fff; border:none; margin:0 auto; border-radius:4px;}
+.yonhu_xy_div div .btn:hover{background:#20c981;}
+.yonhu_xy_div dl dt img{ position:absolute; top:7px; right:10px; cursor:pointer}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

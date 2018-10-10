@@ -1,0 +1,121 @@
+/*index*/
+.container .content{overflow:visible;}
+.c55{overflow:visible;background:#fff;border-top-left-radius:5px;border-top-right-radius:5px;}
+.c55>a{height:60px;padding-top:10px;display:block;text-align:center;float:left;color:#666;font-size:12px;width:84px;}
+.c55>a strong{font-size:22px;display:block;text-align:center;}
+.c55>a.c889{width:84px;border-left:solid 1px #F5F5F5;border-right:solid 1px #F5F5F5;}
+.c55>a:hover{background:#f5f5f5;}
+.c55 .c220{overflow:hidden;padding:15px;border-bottom:solid 1px #F5F5F5;}
+.c55 .c220 dt{float:left;margin-right:15px;}
+.c55 .c220 dt a{display:block;}
+.c55 .c220 dt a img{width:60px;height:60px;display:block;border:solid 1px #EBEBEB;border-radius:50%;}
+.c55 .c220 dd{float:left;padding-top:10px;}
+.c55 .c220 dd>a{color:#4A4A4A;font-size:14px;font-weight:bold;display:block;margin-bottom:10px;max-width:147px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.c55 .c220 dd p {color:#000;font-size:12px;}
+.c55 .c220 dd p a{color:#000;}
+.c55 .c220 dd p span{margin:0 5px;}
+/*最新粉丝*/
+.c92{background:#fff;height:auto;font-size:14px;color:#000;border-radius:5px;}
+.c92 .c93{padding:20px;border-top:solid 1px #EBEBEB;}
+.c92 .c93 .c81 {width:230px;margin-top:25px;}
+.c92 .c93 .c81 li{position:relative;width:44px;height:44px;display:block;float:left;margin:0 12px 12px 0;}
+.c92 .c93 .c81 li>a{width:44px;height:44px;display:block;}
+.c92 .c93 .c81 li img{width:44px;height:44px;border-radius:50%;}
+.c92 .c93 .c81 li:hover{z-index:10;}
+.c92 .c93 .c81 li:hover .user-info{display:block;top:35px;}
+.c92 .c93 .c82{font-size:14px;color:#333;}
+/*查看更多*/
+#review_list_more a{height:52px;line-height:52px;text-align:center;border-top:solid 1px #EBEBEB;color:#000;display:block;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+#review_list_more a:hover{background:#f8f8f8;}
+
+/*推荐关注人*/
+.c89{width:100%;margin-top:-20px;padding:30px 0;}
+.c89 .content{overflow:hidden;background:#fff;border-radius:5px;}
+.c56{margin:30px 60px;border:solid 1px #ebebeb;overflow:hidden;padding:30px 30px 30px 30px;}
+.c56 .c61{color:#333;font-size:14px;margin-bottom:30px;}
+.c56 .c61 span{height:30px;line-height:30px;display:block;font-size:17px;}
+.c56 dl{float:left;width:259px;height:65px;}
+.c56 dl{margin-bottom:40px;overflow:hidden;position:relative;}
+.c56 dl dt,.c56 dl dd{width:190px;float:right;}
+.c56 dl dd.c59{width:60px;height:60px;float:left;}
+.c56 dl dd.c59 a{display:block;width:60px;height:60px;}
+.c56 dl dd.c59 img{width:60px;height:60px;border-radius:50%;}
+.c56 dl dt{height:19px;overflow:hidden;}
+.c56 dl dt a{color:#417505;font-size:14px;}
+.c56 dl dd.c60,.c56 dl dd.c60 a{font-size:12px;color:#000;}
+.c56 dl dd.c62{height:18px;margin:5px 0;overflow:hidden;}
+
+.c56 dl dd.c62 .checkbox{font-size:13px;}
+.c56 .c900{text-align:center;overflow:hidden;width:100%;height:30px;}
+.c56 .button{margin:0px auto;display:inline-block;}
+/*已关注*/
+.c56 dl dd.c62 a.c63{background:asset-url("178.png") no-repeat 5px center #eee;padding-left:15px;width:48px;color:#666;}
+
+/*左侧标签*/
+.c541{height:49px;background:#f6f6f6;border-top-left-radius:5px;border-top-right-radius:5px;overflow:hidden;}
+.c541 a{display:block;float:left;line-height:49px;padding:0 22px;color:#000;font-size:15px;}
+.c541 a:hover,.c541 a.c542{background:#c9c9c9;color:#fff;}
+
+/*收到的评论*/
+.reviews .container{background:#fff;}
+.reviews .content h2{height:35px;line-height:35px;font-size:14px;color:#999;}
+.l1{margin:0px;}
+.l1 dl{padding:20px 0px;border-top:solid 1px #EBEBEB;overflow:hidden;}
+.l1 dl .c207{width:52px;height:52px;position:relative;float:left;}
+.l1 dl .c207>a{width:52px;height:52px;display:block;}
+.l1 dl .c207 img{border-radius:50%;width:52px;height:52px;}
+.l1>dl>dt{width:625px;float:right;margin-bottom:10px;}
+.l1>dl>dt>strong{font-size:12px;color:#9C9A9B;line-height:18px;float:left;}
+.l1>dl>dt a.c205{float:left;color:#417505;margin-right:15px;font-size:14px;}
+.l1>dl>dt ul{float:left;}
+.l1>dl>dt ul li{float:left;margin-right:4px;}
+.l1>dl>dt p{float:left;color:#9c9a9b;font-size:12px;}
+.l1>dl>dt p span{margin-left:20px;}
+.l1>dl>dt>span{display: block;
+float: right;
+background: none repeat scroll 0% 0% #E5B409;
+border-radius: 3px;
+padding: 0px 5px;
+height: 18px;
+line-height: 18px;
+color: #FFF;
+font-size: 12px;}
+.l1 dl dd.c59{width:625px;float:right;font-size:14px;color:#666;line-height:24px;*margin-top:-30px;word-break:break-all;}
+.l1 dl dd.c59 div{overflow:hidden;}
+.l1 dl dd.c59 div img{width:70px;height:70px;border-radius:4px;margin:10px 10px 0 0;}
+.l1 dl dd.c61{width:625px;float:right;line-height:24px;overflow:hidden;*margin:-5px 0;}
+.l1 dl dd.c61 p{float:left;color:#b1b2b6;font-size:13px;}
+.l1 dl dd.c61 p a{color:#b1b2b6;font-size:13px;}
+.l1 dl dd.c61 .c62{float:right;color:#333;font-size:13px;}
+.l1 dl dd.c61 .c62 a{color:#333;font-size:13px;}
+.l1 dl dd.c61 .c62>a.c2071{background:asset-url("172.png") no-repeat left -1px;padding-left:20px;}
+.l1 dl dd.c61 .c62 span{margin:0 5px;}
+.l1 dl dd.c61 .c62 span a{margin-right:10px;}
+
+/*赞和回复部分*/
+.l1 dl dd.c63{width:625px;float:right;background:#f6f6f6;margin-top:15px;*margin:-20px 0;position:relative;}
+.l1 dl dd.c63 img.c68{position:absolute;top:-12px;left:15px;}
+.l1 dl dd.c63 .c64{padding:4px 10px;overflow:hidden;color:#417505;font-size:13px;line-height:20px;border-bottom:solid 1px #ececec;}
+.l1 dl dd.c63 .c64 img{float:left;margin:2px 10px 0 0;}
+.l1 dl dd.c63 .c64 a{color:#417505;font-size:14px;}
+.l1 dl dd.c63 .c64 p a{color:#ADADAD;font-size:13px;line-height:20px;}
+.l1 dl dd.c63 .c66{font-size:13px;color:#333;line-height:20px;padding:0 10px;margin-top:5px;}
+.l1 dl dd.c63 .c66 strong{visibility:hidden;margin-left:5px;}
+.l1 dl dd.c63 .c66 strong a{color:#ADADAD;}
+.l1 dl dd.c63 .c66:hover strong{visibility:visible;}
+.l1 dl dd.c63 .c66>a{color:#417505;margin-right:5px;font-size:14px;}
+.l1 dl dd.c63 .c66 span{margin-right:5px;}
+.l1 dl dd.c63 .c67{padding:10px;overflow:hidden;}
+.l1 dl dd.c63 .c67 textarea{border:none;background:#fff;border-radius:5px;width:585px;min-height:70px;padding:10px;font-size:13px;color:#333;margin-bottom:10px;}
+.l1 dl dd.c63 .c67 .button{float:right;}
+.l1 dl dd.c63 a.c69{padding:0 10px;display:block;color: #ADADAD;font-size: 13px;line-height: 20px;margin-top:5px;}
+
+
+
+.l1 dl dd.c71{height:72px;background:#f6f6f6;width:625px;float:right;margin:5px 0;}
+.l1 dl dd.c71 img{width:54px;height:54px;border-radius:5px;float:left;margin:9px 10px 0 9px;display:inline-block;}
+.l1 dl dd.c71 p{display:table-cell;vertical-align:middle;height:72px;}
+.l1 dl dd.c71 p a{color:#000;font-size:12px;}
+.l1 dl dd.c63 .c65{padding-bottom:5px;}
+
+.reviews .empty{margin-top:-20px;}

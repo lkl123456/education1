@@ -1,0 +1,27 @@
+/*导入ueditor/default/ueditor开始*/
+@import url("../ueditor/default/ueditor.css");
+/*导入ueditor/default/ueditor结束*/
+
+/*导入ueditor/webuploader开始*/
+@import url("../ueditor/webuploader.css");
+/*导入ueditor/webuploader结束*/
+
+.banner{height:217px;background:url("../../img/projects/36.jpg") no-repeat center center;margin-bottom:58px;}
+/*你会得到*/
+.get img{display:block;margin:0px auto;margin-bottom:38px;}
+.get .c1{width:500px;border-bottom:dashed 1px #666;overflow:hidden;padding-bottom:60px;margin:0px auto;}
+.get .c1 div{padding-top:195px;float:left;width:230px;}
+.get .c1 .c2{background:url("../../img/projects/200.png") no-repeat top center;text-align:center;margin-right:40px;}
+.get .c1 .c3{background:url("../../img/projects/201.png") no-repeat top center;}
+.get .c1 div strong{font-size:20px;color:#0a0a0a;display:block;text-align:center;margin-bottom:10px;}
+.get .c1 p{font-size:15px;color:#0a0a0a;line-height:18px;}
+.get .c1 p span{margin:0 25px;}
+/*实现*/
+.true img{display:block;margin:0px auto;margin-top:55px;}
+.true p{color:#000;font-size:15px;line-height:24px;text-align:center;margin:35px 0 32px 0;overflow:hidden;}
+.true>a{width:157px;height:49px;line-height:49px;border:solid 4px #c7d102;display:block;font-size:23px;margin:0px auto;margin-bottom:75px;margin-top:32px;color:#c7d102;padding-left:34px;background:url("../../img/projects/204.png") no-repeat 143px center;}
+.true>a:hover{background:#c7d102 url("../../img/projects/203.png") no-repeat 143px center;color:#fff;}
+.true .checkbox{float:left;}
+.true .c5{text-align:center;}
+.true .c5 p{display:inline-block;margin:0px;}
+.true .c5 p a{font-size:14px;color:#C7D102;float:left;display:block;line-height:18px;}

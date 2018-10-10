@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+
+<urlrewrite>
+	
+	<!-- 单视频播放1 -->
+	<rule>
+		<from>^/videoPlay/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml$</from>
+		<to>/videoPlay.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- 单视频播放2 -->
+	<rule>
+		<from>^/videoPlay/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml([a-z_A-Z-=?.+0-9]+)$</from>
+		<to>/videoPlay.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- Scorm播放1 -->
+	<rule>
+		<from>^/scormPlay/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml$</from>
+		<to>/scormPlay.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- Scorm播放2 -->
+	<rule>
+		<from>^/scormPlay/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml([a-z_A-Z-=?.+0-9]+)$</from>
+		<to>/scormPlay.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- WAP班级课程播放1 -->
+	<rule>
+		<from>^/videoWapPlay/([0-9]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Z_]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml$</from>
+		<to>/videoWapPlay.html?CourseId=$1&amp;ScormOrVideo=$2&amp;CourseCode=$3&amp;UserId=$4&amp;VideoRP=$5&amp;Systime=$6&amp;Location=$7&amp;StudyKey=$8</to>
+	</rule>
+	<!-- WAP班级课程播放2 -->
+	<rule>
+		<from>^/videoWapPlay/([0-9]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Z_]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml([a-z_A-Z-=?.+0-9]+)$</from>
+		<to>/videoWapPlay.html?CourseId=$1&amp;ScormOrVideo=$2&amp;CourseCode=$3&amp;UserId=$4&amp;VideoRP=$5&amp;Systime=$6&amp;Location=$7&amp;StudyKey=$8</to>
+	</rule>
+	<!-- 单视频预览1 -->
+	<rule>
+		<from>^/videoView/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9a-z]+).shtml$</from>
+		<to>/videoView.html?CourseId=$1&amp;CourseCode=$2&amp;Test=$3</to>
+	</rule>
+	<!-- 单视频预览2 -->
+	<rule>
+		<from>^/videoView/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9a-z]+).shtml([a-z_A-Z-=?.+0-9]+)$</from>
+		<to>/videoView.html?CourseId=$1&amp;CourseCode=$2&amp;Test=$3</to>
+	</rule>
+	<!-- 干教页面1 -->
+	<rule>
+		<from>^/videoPlayGJ/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml$</from>
+		<to>/videoPlayGJ.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- 干教页面 2-->
+	<rule>
+		<from>^/videoPlayGJ/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml([a-z_A-Z-=?.+0-9]+)$</from>
+		<to>/videoPlayGJ.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- 手机播放页面1 -->
+	<rule>
+		<from>^/mobilePlay/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml$</from>
+		<to>/mobilePlay.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+	<!-- 手机播放页面 2-->
+	<rule>
+		<from>^/mobilePlay/([0-9]+)/([0-9A-Z]+)/([0-9]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9A-Za-z]+)/([0-9A-Z_]+)/([A-Z0-9a-z\.]+)/([0-9]+)/([0-9]+)/([0-9a-z]+).shtml([a-z_A-Z-=?.+0-9]+)$</from>
+		<to>/mobilePlay.html?CourseId=$1&amp;Cname=$2&amp;ScormOrVideo=$3&amp;CourseCode=$4&amp;UserId=$5&amp;GreadId=$6&amp;VideoRP=$7&amp;SessionId=$8&amp;Systime=$9&amp;Location=$10&amp;StudyKey=$11</to>
+	</rule>
+</urlrewrite>

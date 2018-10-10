@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title>渝中学习网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="课程播放页面">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="/adks-spcrm/style/weixin/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/adks-spcrm/style/weixin/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="/adks-spcrm/style/weixin/css/main.css" />
+	<link rel="stylesheet" href="/adks-spcrm/style/weixin/css/mai.css" />
+	<script src="/adks-spcrm/style/weixin/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/style/weixin/js/move-top.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/style/weixin/js/easing.js"></script>
+	
+	<script type="text/javascript" src="/adks-spcrm/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/Contents.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/jwplayer.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/des.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/commonWap.js"></script>
+	
+	<script type="text/javascript" src="/adks-spcrm/js/md5.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/bootstrap.js"></script>
+	
+</head>
+<body onload="initWapObj()">
+	<div style="height:0px; width:0px; overflow:hidden;">
+		<img id="fxImg" src="http://211.158.25.218:8500/courseImg/wxImg/1.jpg" alt="" width="449" height="210">
+	</div>
+
+	<h4 style="padding-left:15px;" >
+		<span class="glyphicon glyphicon-play-circle"></span> <font id="cname_show"></font>
+	</h4>
+	<div class="play_box" id="container"></div>
+	<div class="icons">
+		<div style="height:5px; line-height:5px; font-size:0;"></div>
+		<span style="float:left; margin-left:0">分类：<font id="ccName_show"></font></span>
+		<span class="glyphicon glyphicon-heart"><font id="chooseNum_show" style="margin-left: 2px;">0</font></span>
+		<span class="glyphicon glyphicon-eye-open glyphicon-chevron-right"><font id="clickNum_show" style="margin-left: 2px;">0</font></span>
+	</div>
+	
+	<!-- 课程主题下的课程列表 -->
+	<div style="background:#e5e5e5; border:1px solid #ddd">
+		<div class="else_c">
+			<span class="glyphicon glyphicon-play-circle" style="color:#167bca; margin-right:5px"></span>合集课程
+		</div>
+	</div>
+	<div class="list-group list4" style="margin-bottom:0" id="courseOfTheme">
+		<div style="padding-top: 22px; text-align: center; padding-bottom: 30px;"><img src="/adks-spcrm/img/loading.gif" style="width: 31px"/></div>
+	</div>
+	<!-- 课程更多、收起操作 -->
+	<div class="cgen_duode gen_dd" style="display: none; margin-bottom: 20px;">
+   		<button type="button" class="btn btn-default" style="width:100%; ">
+   			<span class="glyphicon glyphicon-save"></span> 显示更多课程
+   		</button>
+  	</div>
+  	<div class="cshow_qi gen_dd" style="display: none; margin-bottom: 20px;">
+   		<button type="button" class="btn btn-default" style="width:100%; ">
+			<span class="glyphicon glyphicon-open"></span> 收起更多课程
+		</button>
+  	</div>
+	
+	
+	<!-- 播放完毕，知识问答 -->
+	<button type="button" id="showCourseQuestion" style="display: none;" class="btn btn-primary btn-lg" data-backdrop="static" data-toggle="modal" data-target="#myModal">
+		课程问答
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index:99999">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content" style="top:100px;">
+	    <button class="close" type="button" id="closeCourseQuestion" style="display: none;" data-dismiss="modal">×</button>
+	      <div class="modal-header">			        
+	        <h3 class="modal-title" id="myModalLabel">课程问答</h3>
+	      </div>
+	      <div class="modal-body">
+	        <h4>啊啊啊</h4>
+	        <!-- 
+	       <p><input type="radio" name="ans" value="A" checked="checked" />A.马刺</p>
+	       <p><input type="radio" name="ans" value="B" />B.勇士</p>
+	       <p><input type="radio" name="ans" value="C" />C.雷霆</p>
+	       <p><input type="radio" name="ans" value="D" />D.骑士</p>
+	        <p><input type="checkbox" value="A" name="ans" />A.马刺</p>
+	        <p><input type="checkbox" value="B" name="ans" />B.马刺</p>
+	        <p><input type="checkbox" value="C" name="ans" />C.马刺</p>
+	        <p><input type="checkbox" value="D" name="ans" />D.马刺</p>
+	        -->
+	      </div>
+	      <div class="modal-footer" style="text-align:center;">
+	        <button type="button" onclick="submitUserAns();" class="btn btn-primary">提交</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- 播放完毕，知识问答 -->
+	
+	<!-- 课程评价 -->
+	<button type="button" id="showCourseEvaluate" style="display: none;" class="btn btn-primary btn-lg" data-backdrop="static" data-toggle="modal" data-target="#myModalE1">
+		课程评价
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModalE1" tabindex="-1" role="dialog" aria-labelledby="myModalE2" style="z-index:99999">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content" style="top:100px;">
+	    <button class="close" type="button" id="closeCourseEvaluate" style="display: none;" data-dismiss="modal">×</button>
+	      <div class="modal-header">			        
+	        <h3 class="modal-title" id="myModalE2">课程评价</h3>
+	      </div>
+	      <div class="star">
+	      	<font style="font-size: 16px;">请评分：</font>
+			<a href="javascript:videoScoreClickFunc(1);"><h1 id="videoscore1" class="glyphicon glyphicon-star"></h1></a>
+			<a href="javascript:videoScoreClickFunc(2);"><h1 id="videoscore2" class="glyphicon glyphicon-star"></h1></a>
+			<a href="javascript:videoScoreClickFunc(3);"><h1 id="videoscore3" class="glyphicon glyphicon-star"></h1></a>
+			<a href="javascript:videoScoreClickFunc(4);"><h1 id="videoscore4" class="glyphicon glyphicon-star"></h1></a>
+			<a href="javascript:videoScoreClickFunc(5);"><h1 id="videoscore5" class="glyphicon glyphicon-star-empty"></h1></a>
+			<input type="hidden" id="videoscore" value="4" />
+	      </div>
+	      <div class="modal-footer" style="text-align:center;">
+	        <button type="button" onclick="updateCourseEvaluate()" class="btn btn-primary" id="c_e_btn">提交</button>
+	        <button type="button" onclick="nextCourse()" class="btn btn-primary" id="c_e_btn_next" style="display: none;">跳过</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- 课程评价 -->
+	
+	
+</body>
+
+<script type="text/javascript" src="/adks-spcrm/js/videoWapPlay.js" ></script>
+
+</html>

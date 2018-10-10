@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<!-- 配置dubbo 远程调用service -->
+
+	<dubbo:application name="adks-app" />
+
+	<dubbo:registry address="${dubbo.zookeeper.url}" />
+
+	<dubbo:reference id="authorAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.author.AuthorAppApi" />
+
+	<dubbo:reference id="courseAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.course.CourseAppApi" />
+	<dubbo:reference id="courseSortAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.course.CourseSortAppApi" />
+	<dubbo:reference id="courseUserAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.course.CourseUserAppApi" />
+	<dubbo:reference id="webCourseApi"
+		interface="com.adks.dubbo.api.interfaces.web.course.CourseApi" />
+	<dubbo:reference id="gradeAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.grade.GradeAppApi" />
+	<dubbo:reference id="gradeUserAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.grade.GradeUserAppApi" />
+
+	<dubbo:reference id="newsAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.news.NewsAppApi" />
+	<dubbo:reference id="newsUserAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.news.NewsUserAppApi" />
+
+	<dubbo:reference id="userAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.user.UserAppApi" />
+	<dubbo:reference id="userCollectionAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.user.UserCollectionAppApi" />
+	<dubbo:reference id="userOnlineAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.user.UserOnlineAppApi" />
+
+	<dubbo:reference id="versionAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.version.VersionAppApi" />
+
+	<dubbo:reference id="bindAppApi"
+		interface="com.adks.dubbo.api.interfaces.app.bind.BindAppApi" />
+</beans>

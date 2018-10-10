@@ -1,0 +1,347 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>课程播放</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="课程播放页面">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="/adks-spcrm/style/login.css"/>
+	<link rel="stylesheet" type="text/css" href="/adks-spcrm/style/play.css"/>
+	<link rel="stylesheet" type="text/css" href="/adks-spcrm/style/commons.css"/>
+	<link rel="stylesheet" type="text/css" href="/adks-spcrm/style/pageCss.css"/>
+	<link rel="stylesheet" type="text/css" href="/adks-spcrm/style/bootstrap.min.css"/>
+	<script type="text/javascript" src="/adks-spcrm/js/courseMain.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/Contents.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/jqPaginator.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/jwplayer.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/des.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/common.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/md5.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/adks-spcrm/js/qrcode.js"></script>
+	<script>
+		//用户是否在线全局判断
+		var $isUserOnline = true;
+	</script>
+</head>
+<body class="bg_gray"  onload="initObjList();">
+<!--头部开始-->
+<div class="header">
+	<div class="wrap">
+    	<div class="logo left">
+        	<a  href="javascript:void(0);"  onclick="changeHref('index.shtml');"><img src="/adks-spcrm/img/logo_yuzhong.png" alt="渝中学习网" /></a>
+        </div>
+        <!-- 导航开始 -->
+        <div class="nav left m_l_50">
+        	<ul class="menu">
+            	<li><a href="javascript:void(0);" onclick="changeHref('index.shtml');">首页</a></li>
+                <li><a href="javascript:void(0);" onclick="changeHref('course/courseIndex/0_0.shtml');" class="visited">课程超市</a></li>
+                <li><a href="javascript:void(0);" onclick="changeHref('activity/activityIndex.shtml');">趣学乐学</a></li>
+                <li><a href="javascript:void(0);" onclick="changeHref('org/orgListIndex.shtml');">市民学校</a></li>
+                <li><a href="javascript:void(0);" onclick="toInterestIndex()">电子期刊</a></li>
+                <li><a href="javascript:void(0);" onclick="changeHref('cms/newsIndex/1.shtml');">新闻资讯</a></li>
+                <li><a href="javascript:void(0);" onclick="changeHref('index/creditIndex.shtm');">学分商城</a></li>
+            </ul>
+        </div>
+        <!-- 导航结束 -->
+        <!-- 登录注册开始 -->
+        <div class="user_info right">
+	        	<div class="nav_menu-item" style="width:60px;">
+		            	<a href="javascript:void(0);" class="l_s" style="width:60px; height:66px; line-height:66px; margin-top:0; color:#1aa35d;">
+			                个人中心
+		                </a>
+		                <ul class="nav_submenu" style="left:-130px;">
+		                	<div class="bg"></div>
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/userIndex/0.shtml');" class="f_14">您好，<span id="userRealName"></span></a></li><!-- 更新用户姓名 -->
+		                    <!--  
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/userIndex4Spcrm/0_${Course.sessionId}.shtml');">个人主页</a></li>
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/userIndex4Spcrm/1_${Course.sessionId}.shtml');">设置</a></li>
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/loginOut4UserId.do?UserId=${Course.userId}&SessionId=${Course.sessionId}');">退出</a></li>
+							-->		                   
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/userIndex/0.shtml');">个人主页</a></li>
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/userIndex/1.shtml');">设置</a></li>
+		                    <li class="nav_submenu-item"><a href="javascript:void(0);" onclick="changeHref('user/loginOut/1488438695981.shtml');">退出</a></li>
+
+		                </ul>   
+		            </div>
+	    </div>
+        <!-- 登录注册结束 -->
+        
+        <div class="search_box right">
+        	<input type="text" placeholder="搜索" class="s_in" /><input type="submit" class="s_btn" value="" />
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<div style="height:66px;"></div>
+<!--播放开始-->
+<div class="play_wrap">
+	<div class="wrap">
+		<!-- 课程打分開始 -->
+    	<h2>
+    		<a href="javascript:void(0);"  onclick="changeHref('course/courseIndex/0_0.shtml');"class="f_default1 left">首页</a> > <span id ="rootCatalog"></span>  <span id="rootCourseTheme"></span>  <span class="f_c_w" id="cname"></span>
+    		<div class="pingfen m_b_10 right">
+            	<span class="left">请给课程打分：</span>
+                <div id="xzw_starSys" class="left">
+                    <div id="xzw_starBox">
+                        <ul class="star" id="star">
+                            <li><a href="javascript:void(0)" title="1" class="one-star">1</a></li>
+                            <li><a href="javascript:void(0)" title="2" class="two-stars">2</a></li>
+                            <li><a href="javascript:void(0)" title="3" class="three-stars">3</a></li>
+                            <li><a href="javascript:void(0)" title="4" class="four-stars">4</a></li>
+                            <li><a href="javascript:void(0)" title="5" class="five-stars">5</a></li>
+                        </ul>
+                        <div class="current-rating" id="showb"></div>
+                    </div>
+                </div>
+                <span></span>
+            </div>
+    	</h2>
+        <!-- 课程打分結束-->
+        
+       	<!-- 视频开始 -->
+        <div class="l_side left">
+        	<div class="play" id="container"></div>
+            <!-- 课程监控开始 -->
+        	<div class="toshare">
+	            <div class="sharemain">
+	                <div id="fxz"></div>
+	                <div class="fzdm" ></div>
+	            </div>
+	    	</div>
+            <!-- 课程监控结束 -->
+            
+            <!-- 播放完毕，知识问答 -->
+            <button type="button" id="showCourseQuestion" style="display: none;" class="btn btn-primary btn-lg" data-backdrop="static" data-toggle="modal" data-target="#myModal">
+			  Launch demo modal
+			</button>
+			
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index:99999">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content" style="top:100px;">
+			    <button class="close" type="button" id="closeCourseQuestion" style="display: none;" data-dismiss="modal">×</button>
+			      <div class="modal-header">			        
+			        <h3 class="modal-title" id="myModalLabel">课程问答</h3>
+			      </div>
+			      <div class="modal-body">
+			        <h4>啊啊啊</h4>
+			        <!-- 
+			        <p><input type="radio" name="ans" value="A" checked="checked" />A.马刺</p>
+			        <p><input type="radio" name="ans" value="B" />B.勇士</p>
+			        <p><input type="radio" name="ans" value="C" />C.雷霆</p>
+			        <p><input type="radio" name="ans" value="D" />D.骑士</p>
+			         <p><input type="checkbox" value="A" name="ans" />A.马刺</p>
+			         <p><input type="checkbox" value="B" name="ans" />B.马刺</p>
+			         <p><input type="checkbox" value="C" name="ans" />C.马刺</p>
+			         <p><input type="checkbox" value="D" name="ans" />D.马刺</p>
+			         -->
+			      </div>
+			      <div class="modal-footer" style="text-align:center;">
+			        <button type="button" onclick="submitUserAns();" class="btn1">提交</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+            <!-- 播放完毕，知识问答 -->
+            
+            <div class="fonction_box"  style="position:relative;">
+            	<div style="background:#3d3d3f;position:absolute;left:0;top:-24px;z-index:9999;color:#fff;padding:0 10px;font-size:12px;display:none;" id="shootId">您上次已学习至 <span id="shootNum" style="color:#1bb674;">00:00:00</span> 处、已自动续播。<a href="javascript:jwplayer('container').seek(0);" style="color:#1bb674;">从头学习</a>　<a style="color:#1bb674;font-size:20px;" href="javascript:yc('shootId');">×</a></div>
+            	<input id="noteContent" name="noteContent" type="text" class="note_t m_r_10" placeholder="请输入笔记内容" onfocus="videoStop();" onblur="videoPlay();" /><input id= "isPrivate"  name="isPrivate" type="checkbox"  /> 私密 <input id="submitNote" onclick="submitNote();" type="submit" value="保存" class="btn m_l_10 m_r_10" /><!--还可以输入 <span class="f_default1">140</span> 字-->
+            </div>
+        </div>
+       	<!-- 视频结束 -->
+       	
+        <!-- 笔记開始 -->
+        <div class="r_side left">
+        	<div id ="noteList">
+        		<dl class="note_list">
+		        	<dt>
+			        	<ul class="note_title">
+			            	<li class="m_hover" onmouserover="tabShow();"><a href="javascript:void(0);">课程选集</a></li>
+			                <li><a href="javascript:void(0);">我的笔记</a></li>
+			                <li><a href="javascript:void(0);">大家的笔记</a></li>
+			            </ul>
+		            </dt>
+		            <!-- 选集開始-->
+		            <dd class="n_lists">
+		            	<ul id="style-4" class="themeCourse"></ul>
+		            </dd>
+		            <!-- 我的筆記父節點開始-->
+		            <dd class="n_lists" style="display: none">
+		            	<ul id="style-4" class="myNote"></ul>
+		            </dd>
+		            <!-- 我的筆記父節點開始結束-->
+           
+		            <!-- 大家筆記父節點開始-->
+		            <dd class="n_lists" style="display: none">
+		            	<ul id="style-4" class="otherNote"></ul>
+		            </dd>
+		            <!-- 大家筆記父節點結束-->
+           		</dl>
+        	</div>
+	        <!-- 收藏手机看开始 -->
+	        <div class="fonction_box1">
+	         	<a id="isCollect" href="javascript:void(0);" onclick="javascript:addUserCollection()"><em class="favorite"></em>收藏</a>
+	         	<a href="javascript:void(0);" onclick="javascript:QrCodeStudy();" ><em class="phone"></em>手机看</a>
+	         	
+	        </div>
+	        <!-- 收藏手机看结束 -->
+        </div>
+        <!-- 笔记結束 -->   		
+    </div>        
+</div>
+<!-- 播放结束 -->
+
+<!-- 评论开始 -->
+<div class="pinglun wrap m_t_20">
+	<div id="qrcode_make">
+		<div class="bg"></div>
+		<h2 align="center">移动学习</h2>
+		<p>扫一扫，移动端继续学习</p>
+		<span id="qrcode_span"></span>
+	</div>
+	<div class="l_box left bg_white border_d">
+    	<!-- 评论内容输入开始 -->
+    	<h2 class="f_default1 m_b_10"><span>评论(<b class="cc_page_num">0</b>)</span></h2>
+        <div class="send_m">
+            <div class="input_text">
+            	<textarea class="text_a form-control" id="pComment"></textarea>
+                <div class="btn_box border_d">
+                	<span class="left"></span>
+                    <input type="submit" class="btn right" value="发表评论" onclick = "javascript:postComment();"/>
+                </div>
+            </div>
+        </div>
+        <!-- 评论内容输入结束 -->
+        
+        <!-- 评论内容父节点开始 -->
+        <div class="m_list m_t_20">
+        	<ul id = "comment"></ul>
+        </div>
+        <!-- 评论内容父节点结束 -->
+        
+        <!-- 评论分页开始 -->
+        <div class="pages"><ul class="pagination m_t_20" id="pagination2" style="text-align:center; background:#fff;"></ul></div>
+        <!-- 评论分页结束 -->
+        
+        <!-- 评论内容子节点克隆开始 -->
+        <div class ="hid" style="display: none">
+    		<li class="clonechild">
+		      	<div class="list_t" >
+		              <img src="" class="left" /><span class="f_default1" >userName</span><span class="time p_l_10">time</span>
+		        </div>
+        		<div class="n_con">content</div>
+        		<div class="btns m_t_10">
+		          	<span class="right">
+		          		<a href="javascript:void(0);" onclick="likeClick(this);"><em class="ding"></em> 顶(<span >0</span>)</a> | 
+		          		<a href="javascript:void(0);" onclick="noLikeClick(this);"><em class="cai"></em> 踩(<span  class="caispan">0</span>)</a> | <a href="javascript:void(0);" style="display: none"><em class="huifu"></em> 回复(<span >0</span>)</a>  
+		          		<a href="javascript:void(0);" onclick="repClick(this);"><em class="jubao"></em> 举报</a>
+		          	</span>
+        		</div>
+     		</li>
+    	</div>
+    	<!-- 评论内容子节点克隆结束 -->
+    </div>
+    
+    <!-- 笔记内容克隆开始 -->
+    <div class="hidNoteLi" style="display:none">
+    	<li>
+            <div class="list_t">
+                   <img src="" class="left" />
+                   <span class="f_default1">name</span>
+                   <span class="time right">date</span>
+           </div>
+           <div class="n_con">content</div>
+           <a href="#" class="btn">定位</a>
+       </li>
+    </div>
+    <!-- 笔记内容克隆结束 -->
+    
+    <!-- 笔记中的  主题选集克隆开始 -->
+    <div class="hidThemeCourses" style="display: none;">
+	    <li><a href="#">sdfsdfsdfsdfsdfsf</a></li> <!-- li class="visited" -->
+    </div>
+    <!-- 笔记中的  主题选集克隆结束-->
+    <!-- 相关课程开始 -->
+    <div class="r_box right bg_white border_d">
+    	<h3><span>相关课程</span></h3>
+        <ul class="tj" id ="xgkc">
+        	
+        </ul>
+    </div>
+    <!-- 相关课程结束 -->
+    
+    <!-- 相关课程克隆内容开始 -->
+    <div class="hidXgkcLi" style="display:none">
+    	<li>
+            <div class="left">
+            	<a href="javascript:void(0);"><img src="/adks-spcrm/img/img_null.jpg" /></a>
+            </div>
+            <h4><a href="javascript:void(0);" >春招流程五步拿下名企</a></h4>
+            <!--<p class="f_gray_9">2016-04-13</p>-->
+        </li>
+    </div>
+    <!-- 相关课程克隆结束 -->
+</div>
+<!-- 评论结束 -->
+    
+<!--Play_Main over-->
+
+<!--Footer begin-->
+<div class="footer_l f_gray_9">
+	Copyright (C) 2016 EDU&SUN . All Rights Reserved. 爱迪科森 版权所有 京ICP备11016584号 
+</div>
+<!-- 舉報內容彈出DIV開始-->
+<div class="yonhu_xy">
+    <div class="yonhu_xy_div">
+        <dl>
+            <dt>举报
+            	<img src="/adks-spcrm/img/zzz_m1.gif" width="15" height="15" />
+            </dt>
+            <dd style="font-size: 12px; line-height: 22px;">
+				<p><input type="radio" name="repType" value="799" checked/> 广告类</p>
+				<p><input type="radio" name="repType" value="800" /> 诈骗类</p>
+				<p><input type="radio" name="repType" value="801" /> 政治有害类</p>
+				<p><input type="radio" name="repType" value="802" /> 淫秽色情类</p>
+				<p><input type="radio" name="repType" value="803" /> 其它有害类</p>
+            </dd>
+        </dl>
+        <div><input type="button" class="btn f_18 f_w_200" value="提交" onclick="javascript:repCommit()" /></div>
+    </div>
+</div>
+<!-- 弹出提醒--开始 -->
+<div id="allts"  style="width:245px; height:41px;left:50%;margin-left:-177px;top:50%;margin-top:-25px; padding-left:55px; padding-top:9px; font-family:'微软雅黑'; font-size:16px;display:none;position:fixed;z-Index:999999;"></div>
+<!-- 弹出提醒--结束 -->
+
+<!--  舉報內容彈出DIV結束-->
+<script type="text/javascript" src="/adks-spcrm/js/lrtk.js"></script>
+<script type="text/javascript" src="/adks-spcrm/js/videoPlay.js" ></script>
+<script>
+	//每隔1分钟，检测SPCRM用户是否在线
+	setInterval('checkUserOnline();', 60000);
+	function checkUserOnline(){
+		//alert($userId_+ ' 检测用户是否在线.....');
+	//	alert($isUserOnline);
+		$.ajax({
+			async:true,
+			url:$commonServiceURL_+'/commonservice/rest/checkUserOnline',
+			data:{'userId':$userId_},
+			dataType : "jsonp",
+			jsonp: "jsoncallback",
+			jsonpCallback:"checkUserOnlineReturn",
+			type:'post',
+			success:function(json){
+				if(json['res'] == 'on'){
+				}else{
+					//用户已销毁或者已退出登录
+					$isUserOnline = false;
+					
+				}
+			}
+		});
+	}
+</script>
+</body>
+</html>

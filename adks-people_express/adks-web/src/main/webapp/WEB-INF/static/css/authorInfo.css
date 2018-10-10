@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.xiangqin{ width:1000px; margin:15px auto; overflow: hidden;}
+.xiangqin_top{ padding:9px 18px; border:#ddd solid 1px; background:#f9f9f9;}
+.xiangqin_top div{ position:relative; overflow:hidden; line-height:22px; padding:9px 0 9px 77px;}
+.xiangqin_top div h2{ font-size:14px; font-weight:normal; position:absolute; left:8px; top:9px; line-height:22px;}
+.xiangqin_top .xian_gan{ border-bottom:#bbb dotted 1px;}
+.xiangqin_top div a{ float:left; white-space:nowrap; margin:3px 0; cursor:pointer; padding:0 11px; color:#b00007; font-size:12px; height:22px; line-height:22px;}
+.xiangqin_top div .a_01{ background:#b00007; color:#fff}
+.xianqin_ul{ width:101%; overflow:hidden}
+.xianqin_ul li{ height:76px; padding:24px 55px 10px 0; width:445px; float:left;}
+.xianqin_ul li .xin_a2{ width:74px; height:74px; float:left; position:relative; border:#ddd solid 1px;}
+.xianqin_ul li .xin_a2 span{ position:absolute; right:0; top:0; width:25px; height:25px; background:url(../images/huoi.png) no-repeat; z-index:9;}
+.xianqin_ul li div{ margin-left:90px;}
+.xianqin_ul li div h2{ font-size:14px; line-height:16px; padding-bottom:3px;}
+.xianqin_ul li div p{ line-height:20px; color:#999; font-size:12px;}
+.xianqin_ul li div p a{ text-decoration:underline; color:#999}
+
+.jiansi{width:1000px; margin:15px auto}
+.jian_atk{ background:url(../images/datuj.png) #f9f9f8 no-repeat; position:relative; padding:178px 30px 15px 173px; }
+.jian_atk img{ position:absolute; left:18px; top:84px;}
+.jian_atk p{ line-height:32px; font-size:30px; color:#FFF; font-family:"微软雅黑"; position:absolute; left:173px; top:115px;}
+.jian_atk div{ font-size:12px; line-height:22px; color:#666}
+.jian_atk div a{ color:#b00007; cursor:pointer}
+.miniin{ margin-top:10px; overflow:hidden;}
+.minini_l{ float:left; width:754px;}
+.minini_r{ margin-left:784px; padding-bottom:20px; background:url(../images/qiji.gif) repeat-x; border:#D5D5D5 solid 1px; border-top:none;}
+.minini_l dt{ border-bottom:#d5d5d5 solid 1px; height:38px; margin-bottom:5px;}
+.minini_l dt h2{ border-bottom:#b00007 solid 2px; line-height:37px; height:37px; width:105px; text-align:center; font-size:14px; color:#b00007}
+.minini_l dd ul li{ padding:20px 0; overflow:hidden; border-bottom:#d5d5d5 solid 1px; height:104px;}
+.minini_l dd ul li img{ float:left; padding:1; border:#d5d5d5 solid 1px;}
+.minini_l dd ul li div{ margin-left:164px;}
+.minini_l dd ul li h2{ font-size:12px; line-height:14px; padding-bottom:5px;}
+.minini_l dd ul li p{ font-size:12px; line-height:22px; color:#333;}
+.minini_r li{ height:54px; padding:13px 0; height:54px; overflow:hidden;}
+.minini_r dd ol{ padding:0 14px;}
+.minini_r dt{ background:url(../images/chuangd.gif) 11px no-repeat; line-height:37px; height:37px; padding-left:23px; font-size:14px; font-weight:bold; margin-bottom:8px;}
+.minini_r dd ol li .nobody{ float:left; width:54px; height:54px; position:relative;}
+.minini_r dd ol li .nobody span{position:absolute; font-weight:bold;  width:18px; height:17px; line-height:16px; text-align:center; background:url(../images/chang_14.gif) repeat-x; color:#666; font-size:12px; border:#d8dade solid 1px; left:0; top:0;}
+.minini_r dd ol li .nobody .bianel{ background:url(../images/chang_13.gif) repeat-x; border:#e8aa88 solid 1px; color:#cf4008}
+.minini_r dd ol li div{ margin-left:64px; padding-top:4px;}
+.minini_r dd ol li div h2{ font-size:12px; line-height:22px;}
+.minini_r dd ol li div p{ font-size:12px; line-height:22px; color:#666}
+.noobt{ border-bottom:none}
+.jian_atk div b{ font-weight:normal; color:#b00007; display:none; cursor:pointer}
+
+
+
+
+
+
+
+
+

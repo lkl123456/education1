@@ -1,0 +1,18 @@
+/*
+此处的样式用来调试上传图片的提示信息
+添加此处的样式可以将提示信息移到图片右侧
+*/
+#imgCss {
+	margin-top: 10px;
+	height: 100px;
+}
+
+img {
+	float: left;
+}
+
+.middle {
+	line-height: 50px; /*注意这行代码，惹是不写，得不到想要的结果哦*/
+	vertical-align: text-bottom;
+	text-align: left;
+}

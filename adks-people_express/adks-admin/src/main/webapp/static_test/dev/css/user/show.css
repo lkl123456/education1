@@ -1,0 +1,153 @@
+body{background:#e6e6e6;}
+/**--------个人博客信息-------------------------*/
+
+.l1{width:690px;float:left;background:#fff;border-radius:5px;margin-top:20px;}
+dl.c10{overflow:hidden;margin:0px auto;margin-top:20px;padding-bottom:21px;}
+dl.c10 dt,dl.c10 dd{width:446px;float:right;overflow:hidden;margin-right:19px;display:inline;}
+dl.c10 dd.c2{width:185px;height:185px;overflow:hidden;float:left;margin:0px;margin-left:20px;display:inline;}
+dl.c10 dd.c2 img{width:185px;height:185px;border-radius:5px;}
+dl.c10 dt{height:24px;line-height:24px;margin-bottom:10px;}
+dl.c10 dt a{font-size:23px;color:#000;float:left;}
+dl.c10 dt.v i,dl.c10 dt.v3 i{float:left;position:static;margin:1px 0 0 2px;}
+dl.c10 dd.c4{line-height:18px;margin-bottom:10px;margin-top:10px;color:#666;font-size:13px;overflow:hidden;}
+
+dl.c10 dd.c7{color:#ADADAD;font-size:13px;}
+dl.c10 dd.c7 p{margin-right:15px;float:left;}
+dl.c10 dd.c5 a{padding-left:21px;color:#999;font-size:13px;line-height:14px;}
+dl.c10 dd.c6{height:20px;line-height:20px;}
+dl.c10 dd.c6 a{font-size:12px;color:#669900;}
+dl.c10 dd.c3 a:hover,.c1 dl dd.c6 a:hover{color:#99cc00;}
+dl.c10 dd.c6 span{width:6px;height:6px;background:#000;display:inline-block;float:left;margin:7px 8px 0 0;text-indent:-9999px;}
+
+/*评价列表*/
+.c54 dl{padding:20px 30px;border-top:solid 1px #EBEBEB;}
+.c54 dl .c207{width:60px;height:60px;position:relative;float:left;}
+.c54 dl .c207>a{width:60px;height:60px;display:block;}
+.c54 dl .c207 img{border-radius:50%;width:60px;height:60px;}
+.c54>dl>dt{width:550px;float:right;margin-bottom:10px;}
+.c54>dl>dt>strong{font-size:12px;color:#9C9A9B;line-height:18px;float:left;}
+.c54>dl>dt a.c205{float:left;color:#417505;margin-right:15px;font-size:14px;}
+.c54>dl>dt ul{float:left;}
+.c54>dl>dt ul li{float:left;margin-right:4px;}
+.c54>dl>dt p{float:left;color:#9c9a9b;font-size:12px;}
+.c54>dl>dt p span{margin-left:20px;}
+.c54>dl>dt>span{display: block;
+float: right;
+background: none repeat scroll 0% 0% #E5B409;
+border-radius: 3px;
+padding: 0px 5px;
+height: 18px;
+line-height: 18px;
+color: #FFF;
+font-size: 12px;}
+.c54 dl dd.c59{width:550px;float:right;font-size:14px;color:#666;line-height:24px;*margin-top:-30px;word-break:break-all;}
+.c54 dl dd.c59 div{overflow:hidden;}
+.c54 dl dd.c59 div img{width:70px;height:70px;border-radius:4px;margin:10px 10px 0 0;}
+.c54 dl dd.c61{width:550px;float:right;line-height:24px;overflow:hidden;*margin:-5px 0;}
+.c54 dl dd.c61 p{float:left;color:#b1b2b6;font-size:13px;}
+.c54 dl dd.c61 p a{color:#b1b2b6;font-size:13px;}
+.c54 dl dd.c61 .c62{float:right;color:#333;font-size:13px;}
+.c54 dl dd.c61 .c62 a{color:#333;font-size:13px;}
+.c54 dl dd.c61 .c62>a.c2071{background:asset-url("172.png") no-repeat left -1px;padding-left:20px;}
+.c54 dl dd.c61 .c62 span{margin:0 5px;}
+.c54 dl dd.c61 .c62 span a{margin-right:10px;}
+/*赞和回复部分*/
+.c54 dl dd.c63{width:550px;float:right;background:#f6f6f6;margin-top:15px;*margin:-20px 0;position:relative;}
+.c54 dl dd.c63 img.c68{position:absolute;top:-12px;left:15px;}
+.c54 dl dd.c63 .c64{padding:4px 10px;overflow:hidden;color:#417505;font-size:13px;line-height:20px;border-bottom:solid 1px #ececec;}
+.c54 dl dd.c63 .c64 img{float:left;margin:2px 10px 0 0;}
+.c54 dl dd.c63 .c64 a{color:#417505;font-size:14px;}
+.c54 dl dd.c63 .c64 p a{color:#ADADAD;font-size:13px;line-height:20px;}
+.c54 dl dd.c63 .c66{font-size:13px;color:#333;line-height:20px;padding:0 10px;margin-top:5px;}
+.c54 dl dd.c63 .c66 strong{visibility:hidden;margin-left:5px;}
+.c54 dl dd.c63 .c66 strong a{color:#ADADAD;}
+.c54 dl dd.c63 .c66:hover strong{visibility:visible;}
+.c54 dl dd.c63 .c66>a{color:#417505;margin-right:5px;font-size:14px;}
+.c54 dl dd.c63 .c66 span{margin-right:5px;}
+.c54 dl dd.c63 .c67{padding:10px;overflow:hidden;}
+.c54 dl dd.c63 .c67 textarea{border:none;background:#fff;border-radius:5px;width:510px;min-height:70px;padding:10px;font-size:13px;color:#333;margin-bottom:10px;}
+.c54 dl dd.c63 .c67 .button{float:right;}
+.c54 dl dd.c63 a.c69{padding:0 10px;display:block;color: #ADADAD;font-size: 13px;line-height: 20px;margin-top:5px;}
+.c54 dl dd.c71{height:72px;background:#f6f6f6;width:550px;float:right;margin:5px 0;}
+.c54 dl dd.c71 img{width:54px;height:54px;border-radius:5px;float:left;margin:9px 10px 0 9px;display:inline-block;}
+.c54 dl dd.c71 p{display:table-cell;vertical-align:middle;height:72px;}
+.c54 dl dd.c71 p a{color:#000;font-size:12px;}
+.c54 dl dd.c63 .c65{padding-bottom:5px;}
+
+.c54 dl .c60{border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.c54 dl .c60 a{color:#2b2b2b;font-size:15px;}
+.c54 dl .c207{position:relative;}
+.c54 dl .c207:hover,.c201 .c208:hover{z-index:4;}
+.c201 .c208:hover .user-info,.c54 dl .c207:hover .user-info{display:block;top:58px;}
+/*右边*/
+.l2{width:254px;float:right;margin-top:20px;}
+.c95{background:#fff;border-radius:5px;overflow:hidden;margin-bottom:15px}
+.c95 >a{width:126px;float:left;display:block;font-size:12px;color:#666;text-align:center;padding:14px 0 14px 0;}
+.c95 strong{font-size:22px;display:inline;text-align:center;margin-right:3px}
+.c95 a.c551{border-right:solid 1px #ebebeb;border-left:solid 1px #ebebeb;}
+.c95>a:hover{background:#f5f5f5;}
+.c95 .c99{height:1px;background:#ebebeb;clear:both;}
+.c95 p{  width: 100%;
+  border-top: solid 1px #EBEBEB;
+  padding: 22px 0;
+  overflow: hidden;}
+.c95>p a{  width: 218px;
+  height: 35px;
+  background: #D2DC00;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  line-height: 35px;
+  text-align: center;
+  margin: 0px auto;}
+/*取消关注*/
+.c95 p a.c79{background:#D2D2D2;color:#666;}
+/*已关注*/
+.c95 p a.c83{background:asset-url("177.png") no-repeat 65px center #eee;color:#666;}
+/*相互关注*/
+.c95 p a.c84{background:asset-url("176.png") no-repeat 65px center #eee;color:#666;width:188px;padding-left:30px;}
+
+.c57 .c58{height:45px;line-height:45px;color:#2B2B2B;font-size:14px;}
+.c57 .c70{background:#fff;border-radius:5px;margin-bottom:17px;overflow:hidden;}
+.c57 .c70 img{height:195px;}
+.c57 .c70 p{width: 224px;max-height: 38px;margin: 10px auto;font-size: 14px;color: #2B2B2B;line-height: 19px;}
+
+/*关注的人*/
+.c72{padding:20px 0px 0 30px;border-top:solid 1px #EBEBEB;}
+.c72 .c73{height:25px;line-height:25px;color:#333;font-size:14px;margin-bottom:20px;}
+.c72 dl{margin-bottom:20px;overflow:hidden;position:relative;}
+.c72 dl dt,.c72 dl dd{width:579px;float:right;}
+.c72 dl dd.c74{width:60px;height:60px;float:left;}
+.c72 dl dd.c74>a{width:60px;height:60px;display:block;}
+.c72 dl dd.c74 img{width:60px;height:60px;border-radius:50%;}
+.c72 dl dt a{color:#417505;font-size:14px;}
+.c72 dl dd.c75{color:#ADADAD;font-size:13px;height:25px;line-height:25px;}
+.c72 dl dd.c75 p{margin-right:15px;float:left;}
+.c72 dl dd.c77{font-size:13px;height:25px;line-height:25px;}
+.c72 dl dd.c77 p{margin-right:15px;float:left;width:415px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.c72 dl dd.c76{border-bottom:solid 1px #EBEBEB;padding-bottom:20px;}
+.c72 dl:last-child dd.c76{border:none;}
+.c72 dl dd.c76,.c72 dl dd.c76 a{font-size:12px;color:#000;}
+.c72 dl .c761{height:30px;width:103px;position:absolute;text-align:center;right:30px;top:50%;margin-top:-25px;color:#666;font-size:16px;display:block;line-height:30px;overflow:hidden;}
+
+.c72 dl .c761 a{height:30px;width:103px;color:#666;font-size:16px;display:block;border-radius:5px;}
+/*已关注*/
+.c72 dl .c761 a.c82{width:76px;padding-left:26px;background:asset-url("177.png") no-repeat 15px center #eee;}
+/*互相关注*/
+.c72 dl .c761 a.c80{background:asset-url("176.png") no-repeat 10px center #eee;width:77px;padding-left:26px;}
+.c72 dl .c761 a.c81{background:#D2DC00;color:#fff;}
+/*取消关注*/
+.c72 dl .c761 a strong{width:103px;height:30px;line-height:30px;display:none;background:#D2D2D2;padding:0px;text-align:center;border-radius:5px;position:relative;}
+.c72 dl .c761 a:hover strong{display:block;margin:-30px 0 0 -26px;}
+
+
+.pagination{border-top:solid 1px #ebebeb;padding:25px 0 5px 0;}
+
+/*tab*/
+.c90{background:#f6f6f6;height:51px;}
+.c90 a{padding:0 36px;font-size:14px;color:#000;line-height:51px;display:block;float:left;}
+.c90 a span{font-weight:bold;margin-right:3px;}
+.c90 a:hover{background:#e7e7e7;color:#666;}
+.c90 a.c91{background:#c9c9c9;}
+.c90 a.c91:hover{background:#c9c9c9;color:#000;}

@@ -1,0 +1,11 @@
+/*
+description:全局公共样式;
+author:vicshang;
+update:;
+*/
+
+/*tab切换样式*/
+._jsTabWrap{}
+._jsTabWrap ._jsTabTitle,._jsTabWrap ._jsTabTitle>a{cursor: pointer;}
+._jsTabWrap ._jsTabCont ._jsTabItem{display:none; }
+._jsTabWrap ._jsTabCont ._jsTabItem.active{display: block;}

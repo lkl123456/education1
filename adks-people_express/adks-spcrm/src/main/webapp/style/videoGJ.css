@@ -1,0 +1,12 @@
+*{margin:0; padding:0;}
+.top{ padding:0 10%; height:10%; background:#0c599d; }
+.middle{ padding:0 10%; height:70%; padding-top:4%; }
+h2{font-family:"微软雅黑"; color:#fff; font-size:100%; padding-top:2%;}
+.bottomDiv{ padding:0 10%; width:100%;height:10%; background:#0c599d; bottom:0px;position:fixed;}
+
+.toshare{position:absolute; display: block; width: 930px; height: 526px;display:none;background:url(../img/bj03.png);top:145px; left:50%; margin-left:-465px;}
+.sharemain{background:url(../img/bj02.png);color:#FCFCFC;margin-top:160px;margin-left:auto;margin-right:auto;width:250px;height:150px;border:1px solid black;}
+#fxz{width:100%;border-bottom: 1px solid black;font-size:16px;font-weight:bold;color:#FCFCFC;text-align:center;margin-top:10px;}
+.fzdm{margin-top:50px;margin-bottom:25px; text-align:center; width:100%;}
+.jxstudy{margin-left:10px;cursor:hand;}
+.restudy{cursor:hand;}

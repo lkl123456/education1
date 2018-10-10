@@ -1,0 +1,34 @@
+/*description:我的余额样式
+author:vicshang(2016-08-18 14:51:47)
+update:*/
+
+body{background:#e6e6e6;}
+.container{background:#fff;}
+.content{padding-bottom:20px}
+/*收支明细*/
+table {border:solid 1px #f3f3f3;margin-bottom:20px;}
+table tr{border-bottom:solid 1px #e9e9e9;}
+table tr td{color:#333;font-size:13px;padding:12px 0;}
+table tr td.c1{width:190px;text-align:center;}
+table tr td.c2{text-align:left;width:62%;}
+table tr td.c2 a{color:#669900;}
+table tr td.c2 a:hover{color:#99cc00;}
+table tr td.c3{width:5%;}
+table tr td.c5{color:red;}
+table tr td.c6{color:green;}
+table tr td.c4{width:15%;text-align:right;padding-right:20px;}
+.tab .c1 span{color:#cc0000;font-weight:bold}
+
+/*申请取现开始*/
+.credits{background:#e6e6e6;}
+.credits .container{background:#fff;}
+.content form{margin-bottom:20px;}
+.content form h2{margin:20px 0;line-height:25px;color:#666;font-size:14px;}
+.content form h2 strong{color:#99cc00;font-weight:bold;font-size:16px;margin:0 3px;}
+.form li{margin-bottom:0px;}
+.form li input{width:290px;}
+.form li .radio input{width:0px\9;height:0px\9;line-height:0px\9!important;padding:0px\9!important;}
+.radio{float:left;}
+.content{padding-bottom:20px}
+.tab .c1 span{color:#cc0000;font-weight:bold}
+/*申请取现结束*/

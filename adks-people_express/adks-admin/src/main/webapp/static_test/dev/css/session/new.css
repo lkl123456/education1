@@ -1,0 +1,22 @@
+body{background:#e6e6e6;}
+.container{background:#f7f7f7;}
+.content{padding:20px 0 15px 0;overflow:hidden;}
+
+/**登录*/
+.l1{width:483px;float:left;}
+h2.c5{height:45px;line-height:45px;border-bottom:solid 1px #d9d9d9;font-size:20px;color:#8c8c8c;margin-bottom:20px;padding-bottom:2px;}
+h2.c5 span{float:right;font-size:14px;}
+h2.c5 span a{color:#669900;}
+h2.c5 span a:hover{color:#99cc00;}
+/**登录-输入框区域*/
+.l1 form p{font-size:14px;color:#8c8c8c;width:483px;overflow:hidden;margin-bottom:14px;}
+.l1 form p.c2 input,.l1 form p.c3 input{min-width: 212px;height:20px;padding:5px 0 4px 33px;font-size: 14px;color:#8c8c8c;overflow:hidden;float:left;}
+.email{background:#fff url("../../img/common/icon-2.png") no-repeat 0px 0px;}
+.password{background:#fff url("../../img/common/icon-2.png") no-repeat 0px -27px;}
+.sessions-new .l1 form p.c3 a{float:left;color:#669900;font-size:14px;margin:8px 0 0 8px;display:inline-block;}
+.sessions-new .l1 form p.c3 a:hover{color:#99cc00;}
+/**登录-复选框选中/未选中 状态*/
+.sessions-new .l1 form p.c4{height:18px;overflow:hidden;margin:-1px 0 25px 0;}
+
+.button-green{margin-bottom:14px;}
+/**忘记密码页面***/

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:task="http://www.springframework.org/schema/task"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+		
+	<bean id="customProducer" class="com.adks.dbclient.kafka.AdksKafkaProducer">
+		<constructor-arg>
+			<map>
+				<entry key="bootstrap.servers" value="${kafka.producer.bootstrap.servers}"/>
+				<entry key="key.serializer" value="${kafka.producer.key.serializer}"/>
+				<entry key="value.serializer" value="${kafka.producer.value.serializer}"/>
+				<entry key="acks" value="${kafka.producer.acks}"/>
+				<entry key="timeout.ms" value="${kafka.producer.timeout.ms}"/>
+				<entry key="compression.type" value="${kafka.producer.compression.type}"/>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="messageProducer" class="com.adks.dbclient.kafka.KafkaMessageProducer" autowire="byName">
+		<property name="producer" ref="customProducer"/>
+	</bean>
+	<context:component-scan base-package="com.adks.dbclient.kafka"/>
+</beans>

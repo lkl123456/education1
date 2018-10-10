@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<dubbo:application name="adks-admin" />
+
+	<dubbo:registry address="${dubbo.zookeeper.url}" />
+
+	<dubbo:reference id="adminApi"
+		interface="com.adks.dubbo.api.interfaces.admin.AdminApi" />
+	<dubbo:reference id="userOnlineApi"
+	interface="com.adks.dubbo.api.interfaces.admin.user.UserOnlineApi" />
+
+	<dubbo:reference id="userAdminApi"
+		interface="com.adks.dubbo.api.interfaces.admin.user.UserApi" />
+
+	<dubbo:reference id="userroleApi"
+		interface="com.adks.dubbo.api.interfaces.admin.role.UserroleApi" />
+
+	<dubbo:reference id="menuApi"
+		interface="com.adks.dubbo.api.interfaces.admin.menu.MenuApi" />
+	<dubbo:reference id="orgApi"
+		interface="com.adks.dubbo.api.interfaces.admin.org.OrgApi" />
+	<dubbo:reference id="gradeApi"
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeApi" />
+	<dubbo:reference id="gradeUserApi"
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeUserApi" />
+	<dubbo:reference id="gradeCourseApi"
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeCourseApi" />
+	<dubbo:reference id="gradeExamApi"
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeExamApi" />
+	<dubbo:reference id="gradeWorkApi"
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeWorkApi" />
+	<dubbo:reference id="gradeNoticeApi"
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeNoticeApi" />
+	<dubbo:reference id="enumerationApi"
+		interface="com.adks.dubbo.api.interfaces.admin.enumeration.EnumerationApi" />
+	<dubbo:reference id="courseSortApi"
+		interface="com.adks.dubbo.api.interfaces.admin.course.CourseSortApi" />
+	<dubbo:reference id="courseApi"
+		interface="com.adks.dubbo.api.interfaces.admin.course.CourseApi" />
+	<dubbo:reference id="courseSaveFileApi"
+		interface="com.adks.dubbo.api.interfaces.admin.course.CourseSaveFileApi" />
+	<dubbo:reference id="courseUserApi"
+		interface="com.adks.dubbo.api.interfaces.admin.course.CourseUserApi" />
+
+	<dubbo:reference id="zhijiApi"
+		interface="com.adks.dubbo.api.interfaces.admin.zhiji.ZhijiApi" />
+	<dubbo:reference id="questionApi"
+		interface="com.adks.dubbo.api.interfaces.admin.question.QuestionApi" />
+	<dubbo:reference id="questionSortApi"
+		interface="com.adks.dubbo.api.interfaces.admin.question.QuestionSortApi" />
+	<dubbo:reference id="paperApi"
+		interface="com.adks.dubbo.api.interfaces.admin.paper.PaperApi" />
+	<dubbo:reference id="paperQuestionApi"
+		interface="com.adks.dubbo.api.interfaces.admin.paper.PaperQuestionApi" />
+	<dubbo:reference id="examApi"
+		interface="com.adks.dubbo.api.interfaces.admin.exam.ExamApi" />
+	<dubbo:reference id="examPaperApi"
+		interface="com.adks.dubbo.api.interfaces.admin.exam.ExamPaperApi" />
+	<dubbo:reference id="roleApi"
+		interface="com.adks.dubbo.api.interfaces.admin.role.RoleApi" />
+	<dubbo:reference id="authorApi"
+		interface="com.adks.dubbo.api.interfaces.admin.author.AuthorApi" />
+
+	<dubbo:reference id="newsApi"
+		interface="com.adks.dubbo.api.interfaces.admin.news.NewsApi" />
+	<dubbo:reference id="advertiseApi"
+		interface="com.adks.dubbo.api.interfaces.admin.news.AdvertiseApi" />
+	<dubbo:reference id="filesApi"
+		interface="com.adks.dubbo.api.interfaces.admin.news.FilesApi" />
+	<dubbo:reference id="friendlylinkApi"
+		interface="com.adks.dubbo.api.interfaces.admin.news.FriendlylinkApi" />
+	<dubbo:reference id="newsSortApi"
+		interface="com.adks.dubbo.api.interfaces.admin.news.NewsSortApi" />
+	<dubbo:reference id="operaApi"
+		interface="com.adks.dubbo.api.interfaces.admin.operation.OperaApi" />
+	<dubbo:reference id="sysNoticeApi"
+		interface="com.adks.dubbo.api.interfaces.admin.news.SysNoticeApi" />
+	<dubbo:reference id="logApi"
+		interface="com.adks.dubbo.api.interfaces.admin.log.LogApi" />
+</beans>

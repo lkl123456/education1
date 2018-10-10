@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<!-- 配置dubbo 远程调用service -->
+
+	<dubbo:application name="adks-web" />
+
+	<dubbo:registry address="${dubbo.zookeeper.url}" />
+	<dubbo:reference id="webCourseApi"
+		interface="com.adks.dubbo.api.interfaces.web.course.CourseApi" />
+	<dubbo:reference id="webCourseUserApi"
+		interface="com.adks.dubbo.api.interfaces.web.course.CourseUserApi" />
+	<dubbo:reference id="webAdvertiseApi"
+		interface="com.adks.dubbo.api.interfaces.web.news.AdvertiseApi" />
+	<dubbo:reference id="webNewsApi"
+		interface="com.adks.dubbo.api.interfaces.web.news.NewsApi" />
+	<dubbo:reference id="webNewsSortApi"
+		interface="com.adks.dubbo.api.interfaces.web.news.NewsSortApi" />
+	<dubbo:reference id="webOrgApi"
+		interface="com.adks.dubbo.api.interfaces.web.org.OrgApi" />
+	<dubbo:reference id="webGradeApi"
+		interface="com.adks.dubbo.api.interfaces.web.grade.GradeApi" />
+	<dubbo:reference id="webGradeWorkApi"
+		interface="com.adks.dubbo.api.interfaces.web.grade.GradeWorkApi" />
+	<dubbo:reference id="webGradeExamApi"
+		interface="com.adks.dubbo.api.interfaces.web.grade.GradeExamApi" />
+	<dubbo:reference id="webGradeUserApi"
+		interface="com.adks.dubbo.api.interfaces.web.grade.GradeUserApi" />
+	<dubbo:reference id="webGradeCourseApi"
+		interface="com.adks.dubbo.api.interfaces.web.grade.GradeCourseApi" />
+	<dubbo:reference id="webAuthorApi"
+		interface="com.adks.dubbo.api.interfaces.web.author.AuthorApi" />
+	<dubbo:reference id="webUserApi"
+		interface="com.adks.dubbo.api.interfaces.web.user.UserApi" />
+	<dubbo:reference id="webZhijiApi"
+		interface="com.adks.dubbo.api.interfaces.web.zhiji.ZhijiApi" />
+	<dubbo:reference id="webUsercollecttionApi"
+		interface="com.adks.dubbo.api.interfaces.web.user.UserconllectionApi" />
+	<dubbo:reference id="searchApi"
+		interface="com.adks.dubbo.api.interfaces.web.search.SearchApi" />
+
+</beans>

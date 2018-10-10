@@ -1,0 +1,110 @@
+@charset "gb2312";
+/* CSS Document */
+p{ font-size: 12px;}
+.kctop{ font-size:22px; position:relative; font-family:"Î¢ÈíÑÅºÚ"; height:40px; line-height:40x; padding-left:3px; padding-top:5px; border-bottom: #b00007 solid 2px;}
+.kcbf{ position:relative; overflow:hidden;  width:1000px;  margin:12px auto}
+.bfl{ float:left; width:710px; margin-top: 15px; padding-bottom:8px; overflow: hidden; border: #e5e5e5 solid 1px;   }
+.bfr{ float:right; width:260px; padding-right:10px; padding-top:15px;}
+.zheshi input{ cursor:pointer; border: none;padding: 0}
+.bfdl{   overflow:hidden;}
+.zheshi{  width:200px; position: absolute; z-index:9999; left:845px; top:7px;}
+.bfdl dt{ height:42px; line-height:42px; color:#c33b1d; font-size:14px; font-weight:bold; padding-top:5px; padding-left:32px; background:url(../images/zsxm_12.jpg) 2px no-repeat;}
+.kctop a{ position: absolute; right: 20px; top:10px;}
+.bfd1{ overflow:hidden; padding:15px 25px 0 14px; margin-bottom:15px; color:#555}
+.bfd1 a{ float:left }
+.bfd1 .wangle{ width:460px; position:relative; font-size:12px; float:right; margin:0px; line-height:23px; height:auto; padding:0px;}
+.bfd1  img{ padding:2px; border:#CCC solid 1px;;} 
+.bfd1 span{ color:#999;}
+ul,ol,li{list-style: none;}
+.bfd2 { margin:15px 25px 18px 0px; *margin:15px 25px 0px -45px; overflow:hidden}
+.bfd2 h2{ font-size: 14px; width:685px;}
+.bfd1 i,.jsjs i{ font-style:normal; display:none}
+.bfd1 strong,.jsjs strong{  cursor:pointer;  font-weight:normal; color:#004986}
+#shou{ float:right}
+.shand li a:hover,.jsj dd li a:hover,.du a:hover{color:#004986}
+.bfd1 div{ height:72px; line-height:38px; padding-top:20px;}
+.bfd1 div input{ margin:0px 3px; border:none; vertical-align:middle;}
+.bfd1 b,.jsjs b{ font-weight:normal;  cursor:pointer; color:#004986;}
+.bfd1 b,.jsjs b a{ float: none}
+.bfd1 b,.jsjs b a:hover{ color:#004986; }
+.bf1{ background:url(../images/aak_24.jpg) 0px 0px no-repeat; width:127px; height:33px; }
+.bf2{ cursor:pointer; position: absolute; left: 128px; top:15px; background:url(../images/luona1.gif) no-repeat; width:119px; height:36px;}
+.bf3{ background:url(../images/aak_29.jpg) no-repeat; width:117px; font-size:12px; padding-left:70px; color:#999; height:29px;}
+.bf4{cursor:pointer; background:url(../images/aak_31.jpg) no-repeat; width:109px; height:29px;}
+.bf5{cursor:pointer; background:url(../images/luona.gif) no-repeat; width:119px; height:36px; position: absolute; left: 0px; top: 15px;}
+.bfd2 h2{ background:url(../images/aak_15.jpg) 0px 0px repeat-x; height:34px; position:relative; line-height:34px; border-left: #CCC solid 1px;  border-right: #CCC solid 1px;  }
+.bfd2 h2 div{ background:url(../images/aak_38.jpg) 0px 0px repeat-x;  width:94px; text-align:center; border-right:#CCC solid 1px;}
+.bfd2 ol{ overflow:hidden; width:800px; padding:8px 0px;}
+.bfd2 ol li{ width:325px; padding-left:10px; height:32px; line-height:32px; border:#CCC solid 1px; float:left; margin:11px 11px 0px 0px;}
+.shand {overflow:hidden; width:700px; padding:8px 0px; }
+.shand li{ width:155px;  line-height:20px; float: left; margin-right: 5px; margin-left:10px; padding-top:12px; display: inline;}
+.shand img{ padding: 2px; border:#ccc solid 1px}
+.ing1{ position:absolute; top:10px; right:33px;}
+.ing2{ position:absolute; top:10px; right:10px;}
+.bfdq{  margin:15px 25px 0px 14px; overflow:hidden}
+.bfdq dt{ background:url(../images/zsxm_46.jpg) 0px 0px repeat-x; border-left:solid #CCC 1px;  border-right:solid #CCC 1px;  height:35px; line-height:35px; }
+.bfdq dt h2{ width:138px; padding:0px; background:url(../images/zsxm_44.jpg) 0px 0px repeat-x; text-align:center; border-right:solid #CCC 1px; height:36px; line-height:38px; font-size:14px;}
+.bfdq dt h2 span{ color:#999; font-weight:normal}
+.bfdq dd{ padding-right:20px; padding-top:10px;}
+.bfdq dd li{ overflow:hidden; padding:10px 0px; border-bottom:#CCC dotted 1px;}
+.bfdq dd li span{ color:#999}
+.bfdq dd li img{ float:left; padding:0px 12px;}
+.bfdq dd li b{ font-weight:normal; font-size:14px}
+.sql{ height:45px; line-height:45px;}
+.sql span{ color:#ca5634}
+.sql img{ float:right; padding-top:8px;}
+.dhsj{ width:100%; height:95px; padding:5px; }
+.haor li{ overflow: hidden;; padding:10px 0px}
+.fbpl{ background:url(../images/aak_59.jpg) 0px 0px no-repeat; width:100px; height:33px; border:none; float:right; margin:15px 5px 25px;}
+.haor img{ float: left; padding-right:10px;}
+.haor{ margin: 0px; padding:0px;}
+.jsjs{ }
+.jsjs dt{ background:url(../images/aak_15.jpg) 0px 0px repeat; height:35px; border-left:solid 1px #CCC; border-right:solid 1px #CCC; line-height:35px; position:relative}
+.jsjs dt h2{ background:url(../images/aak_18.jpg) 10px no-repeat; padding-left:25px; font-size:12px;}
+.jsjs dd{ padding:12px 0px 0 12px; margin-top:0px; min-height: 102px; border: #e5e5e5 solid 1px; border-top:none  }
+.jsjs1{ font-size:12px; line-height:22px; color:#444}
+.jsjs1 span{ color:#999}
+.jsjs1 a{ float:left; padding-right:14px;}
+.jsjs1 a img{ padding:2px; border:#CCC solid 1px;}
+.jsjs2{ margin:12px 0px 8px;}
+.jsjs2 h2{ height:28px; margin-bottom:8px; line-height:28px; padding-left:10px; background:#f2f2f2; font-size:12px;}
+.jsjs2 li{ background:url(../images/zsxm_32.jpg) 3px no-repeat; padding-left:22px; }
+.jsj{ margin-top:15px;}
+
+.jsj dd li{  border-bottom:#CCC dotted 1px; line-height:35px; padding-left:28px; position:relative}
+.jsj dd li h2{ font-size:10px; color:#333; position:absolute; top:0px;*top:-12px; left:0px; background:url(../images/kchen_30.jpg) 0px  no-repeat; width:20px; text-align:center;}
+.jsj dd{ padding-top:5px; padding-bottom:12px; }
+.jsj dd .du{ overflow:hidden; line-height:20px; padding:0px 0px 10px;}
+.du a{ float:left; padding: 0px 14px 3px 0px;  background:url(../images/tian.gif)  no-repeat;}
+.du a img{ padding:2px;border: #d5d5d5 solid 1px;}
+.jsj dd li .dul{ background:url(../images/kchen_27.jpg) 0px no-repeat; color:#b22a06}
+.du span{ color:#999; float: left}
+.du{ padding:10px 0px; font-size:12px; line-height:20px; overflow: hidden;}
+.bfd2 .qina a{}
+.bfd2 .qina .qinas{ background: #c2340e; color: #fff; padding: 0px 5px;}
+.bfd2 .qina .qinas2{  padding: 0px 5px;}
+.bfd2 .qina .qinas2:HOVER { color: #c2340e; }
+.zhankai{float: right;line-height: 31px; margin: 4px 0;}
+.shands{ padding-right: 25px;}
+.shands li{ position: relative; color: #666; font-size:14px; height: 60px; background:url(../../images/list_0.png) 15px no-repeat; }
+.shands li img{ position: absolute; left: 40px; top: 10px;}
+.shands li p{ position: absolute; font-size:14px; width: 400px; line-height: 60px; height: 60px; left: 115px; top: 0; }
+.shands li span{ position: absolute;color:#999;  right: 135px; line-height: 60px; top: 0; }
+.shands li b{ line-height: 60px; color:#999; font-weight: normal; position: absolute; top: 0; right: 5px; padding-left:20px; background:url(../../images/list_2.png) 0px no-repeat; }
+.shands li a{ position: absolute; height: 40px; line-height: 40px; padding: 0 20px; display:none; background: #c2340e; color: #fff;  top: 10px; right: 10px;}
+.shands li:hover a{ display: inline;}
+.shands li:hover span,.shands li:hover b{display: none;}
+.shands li:hover{ background:rgb(243,243,243)}
+.shands li:hover p{ color: #c2340e}
+.gaibian{ position: relative;; overflow: hidden;}
+.gaibian h2{}
+.gaibian h2{ height:34px; position:relative; line-height:34px; border-bottom: #e5e5e5  solid 1px;;  }
+.gaibian h2 b{ float:left; height:33px; line-height:33px; color:#b00007; font-size:12px;  width:76px; border-bottom:#b00007 solid 2px; text-align:center; }
+.gaibian ol{ overflow:hidden; width:800px; padding:0px 0px 0 14px;}
+.gaibian ol li{ width:149px;  height:130px; overflow:hidden; line-height:32px; float:left; margin:22px 26px 0px 0px;}
+.xia_y{ width: 1000px; margin: 0 auto;}
+.gaibian ol li img{ border:#CCC solid 1px;padding:2px;}
+.tpo,.gaibian ol li span{ position:absolute; width:186px; height:118px; display:none; z-index:999; left:10px; top:10px; background:url(../images/main_bg.png) no-repeat 5px -400px;}
+.bfd1 a:hover .tpo,.gaibian ol li a:hover span{ display: block;}
+.gaibian ol li span{ width:143px; height:91px; left:0; top:0; background:url(../images/main_bg.png) no-repeat -18px -412px;}
+.gaibian ol li{ position: relative;}

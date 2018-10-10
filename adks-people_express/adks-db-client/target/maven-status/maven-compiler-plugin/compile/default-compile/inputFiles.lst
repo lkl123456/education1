@@ -1,0 +1,16 @@
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\mysql\ExtendedPreparedStatementCreator.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\mysql\MysqlClient.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\kafka\KafkaMessageConsumer.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\kafka\message\IMessageHandler.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\dao\singaltanent\BaseDao.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\kafka\message\IMessageConsumer.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\kafka\message\IMessageProducer.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\dbutil\QueryUtil.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\kafka\KafkaMessageProducer.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\redis\PipelineCallback.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\redis\RedisClient.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\dao\multitanent\MultitenantBaseDao.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\kafka\AdksKafkaProducer.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\mysql\MultitenantMysqlClient.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\service\singletanent\BaseService.java
+E:\workspace-eclipse1\adks-people_express\adks-db-client\src\main\java\com\adks\dbclient\service\multinanent\BaseMultinanentService.java

@@ -1,0 +1,33 @@
+.comments{background:#e6e6e6;}
+.comments .container{background:#fff;}
+.container .content{overflow:visible;}
+/*我的评论-左边*/
+.l1{width:690px;float:left;margin-bottom:20px;}
+.l1 h2{height:35px;line-height:35px;font-size:14px;color:#999;border-bottom:solid 1px #ddd;}
+.l1 dl{padding:20px 0;border-bottom:dashed 1px #ccc;}
+.l1 dl .c30 {width:52px;height:52px;float:left;position:relative;}
+.l1 dl .c30>a{width:52px;height:52px;display:block;}
+.l1 dl .c30 img{width:52px;height:52px;border-radius:50%;}
+.l1 dl .c30:hover .user-info{display:block;top:55px;}
+.l1 dl dd{width:625px;float:right;line-height:27px;color:#808080;font-size:14px;}
+.l1 dl dd a{color:#669900;}
+.l1 dl dd a:hover{color:#99cc00;}
+.l1 dl dd.c1{color:#333;}
+.l1 dl dd.c1 div a{display:block;float:left;overflow:hidden;}
+.l1 dl dd.c1 img{width:65px;height:65px;border:solid 1px #ececec;display:block;float:left;margin:5px 10px 5px 0;}
+.l1 dl dd.c1 img.emoji{width:18px;height:18px;float:none;border:none;margin:0px;display:inline;}
+.l1 dl dd.c2{text-align:right;}
+.l1 dl dd.c2 span{float:left;}
+.l1 dl dd.c2 a{margin-left:20px;}
+.l1 dl dd.c3{overflow:hidden;margin-top:10px;display:none;}
+.l1 dl dd.c3 form{overflow:hidden;}
+.l1 dl dd.c3 textarea{width:613px;min-height:93px;float:left;margin-bottom:10px;}
+.l1 dl dd.c3 .button{float:right;}
+.l1 dl dd.c4{font-size:13px}
+/*我的评论-右边*/
+.l2{width:240px;float:right;margin-bottom:20px;}
+.l2 .c1{width:240px;margin-top:20px;}
+/*空*/
+.empty{margin-top:-20px;}
+
+.pagination{margin-top:20px;}

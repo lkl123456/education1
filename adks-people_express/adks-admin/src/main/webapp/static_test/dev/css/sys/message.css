@@ -1,0 +1,28 @@
+body{background:#e6e6e6;}
+.container{background:#fff;}
+.container .content{overflow:visible;}
+.l1{width:690px;float:left;margin-bottom:20px;}
+.l1 h3{border-bottom: 1px solid #ddd;color: #999;font-size: 14px;height: 35px;line-height: 35px;}
+.l1 dl {border-bottom: 1px dashed #CCCCCC;padding: 20px 0;}
+.l1 dl .c30 {float: left;height: 52px;width: 52px;position:relative;}
+.l1 dl .c30 a.c3{display:block; background:#9CCD1E;border: 1px solid #68A604;border-radius: 30px;width:17px;height: 17px;line-height:17px;text-align:center;top:-8px;right:-8px;position: absolute;font-size:11px;color:#fff;}
+.l1 dl .c30>a{width:52px;height:52px;display:block;}
+.l1 dl .c30 img {height: 52px;width: 52px;border-radius:50%;}
+.l1 dl .c30:hover .user-info{display:block;top:55px;}
+.l1 dl dd {color: #808080;float: right;font-size: 14px;line-height: 27px;width:625px;}
+.l1 dl dd a {color: #669900;}
+.l1 dl dd a:hover {color: #99CC00;}
+.l1 dl dd.c1 {color: #333;}
+.l1 dl dd.c1 span{float:left;margin-right:5px;}
+.l1 dl dd.c1 a{float:left;}
+.l1 dl dd.c1 .c11{color:#9F3E00;height:19px;width:18px;line-height:19px;display:inline-block;background:asset-url("icon-5.png") no-repeat left -100px;text-align:center;font-size:9px;margin:2px 5px 0 2px;}
+.l1 dl dd.c2 {text-align: right;font-size:13px;}
+.l1 dl dd.c2 span {float: left;}
+.l1 dl dd.c2 a {margin-left: 20px;}
+.pagination{margin-top:20px;}
+.empty{margin-top:-20px;}
+
+.l2{width:240px;float:right;margin-bottom:20px;}
+.l2 .c1{width:240px;margin-top:20px;}
+.l1 .c1 div img{display:inline-block;width:65px;height:65px;margin:5px 5px 0 0;}
+

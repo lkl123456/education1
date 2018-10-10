@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:adksKafka.properties</value>
+            </list>
+        </property>
+    </bean>
+	<util:map id="consumer-params">
+		<entry key="bootstrap.servers" value="${kafka.consumer.bootstrap.servers}"/>
+		<entry key="group.id" value="${kafka.consumer.group.id}"/>
+		<entry key="enable.auto.commit" value="${kafka.consumer.enable.auto.commit}"/>
+		<entry key="auto.commit.interval.ms" value="${kafka.consumer.auto.commit.interval.ms}"/>
+		<entry key="heartbeat.interval.ms" value="${kafka.consumer.heartbeat.interval.ms}"/>
+		<entry key="session.timeout.ms" value="${kafka.consumer.session.timeout.ms}"/>
+		<entry key="key.deserializer" value="${kafka.consumer.key.deserializer}"/>
+		<entry key="value.deserializer" value="${kafka.consumer.value.deserializer}"/>
+	</util:map>
+	
+	<bean id="messageConsumer" class="com.adks.dbclient.kafka.KafkaMessageConsumer">
+		<!-- <property name="consumer" ref="customConsumer"/> -->
+		<property name="threadNum" value="${kafka.consumer.threadnum}"/>
+		<property name="configs" ref="consumer-params"/>
+	</bean>
+</beans>

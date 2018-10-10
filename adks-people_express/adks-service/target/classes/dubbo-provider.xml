@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!--真正的接口实现类 -->
+
+	<!-- 总校后台服务 -->
+	<bean id="userAdminApi" class="com.adks.dubbo.providers.admin.user.UserApiImpl" />
+	<bean id="userroleApi" class="com.adks.dubbo.providers.admin.role.UserroleApiImpl" />
+	<bean id="userOnlineApi" class="com.adks.dubbo.providers.admin.user.UserOnlineApiImpl" />
+	<bean id="menuApi" class="com.adks.dubbo.providers.admin.menu.MenuApiImpl" />
+	<bean id="orgApi" class="com.adks.dubbo.providers.admin.org.OrgApiImpl" />
+	<bean id="gradeApi" class="com.adks.dubbo.providers.admin.grade.GradeApiImpl" />
+	<bean id="gradeUserApi" class="com.adks.dubbo.providers.admin.grade.GradeUserApiImpl" />
+	<bean id="gradeCourseApi" class="com.adks.dubbo.providers.admin.grade.GradeCourseApiImpl" />
+	<bean id="gradeExamApi" class="com.adks.dubbo.providers.admin.grade.GradeExamApiImpl" />
+	<bean id="gradeWorkApi" class="com.adks.dubbo.providers.admin.grade.GradeWorkApiImpl" />
+	<bean id="gradeNoticeApi" class="com.adks.dubbo.providers.admin.grade.GradeNoticeApiImpl" />
+	<bean id="enumerationApi" class="com.adks.dubbo.providers.admin.enumeration.EnumerationApiImpl" />
+	<bean id="courseSortApi" class="com.adks.dubbo.providers.admin.course.CourseSortApiImpl"></bean>
+	<bean id="courseApi" class="com.adks.dubbo.providers.admin.course.CourseApiImpl"></bean>
+	
+	<bean id="courseSaveFileApi" class="com.adks.dubbo.providers.admin.course.CourseSaveFileApiImpl"></bean>
+	
+	<bean id="courseUserApi" class="com.adks.dubbo.providers.admin.course.CourseUserApiImpl"></bean>
+	<bean id="zhijiApi" class="com.adks.dubbo.providers.admin.zhiji.ZhijiApiImpl" />
+	<bean id="questionApi" class="com.adks.dubbo.providers.admin.question.QuestionApiImpl" />
+	<bean id="questionSortApi" class="com.adks.dubbo.providers.admin.question.QuestionSortApiImpl" />
+	<bean id="paperApi" class="com.adks.dubbo.providers.admin.paper.PaperApiImpl" />
+	<bean id="paperQuestionApi" class="com.adks.dubbo.providers.admin.paper.PaperQuestionApiImpl" />
+	<bean id="examApi" class="com.adks.dubbo.providers.admin.exam.ExamApiImpl" />
+	<bean id="examPaperApi" class="com.adks.dubbo.providers.admin.exam.ExamPaperApiImpl" />
+	<bean id="roleApi" class="com.adks.dubbo.providers.admin.role.RoleApiImpl" />
+	<bean id="authorApi" class="com.adks.dubbo.providers.admin.author.AuthorApiImpl" />
+
+	<bean id="newsApi" class="com.adks.dubbo.providers.admin.news.NewsApiImpl" />
+	<bean id="newsSortApi" class="com.adks.dubbo.providers.admin.news.NewsSortApiImpl" />
+	<bean id="advertiseApi" class="com.adks.dubbo.providers.admin.news.AdvertiseApiImpl" />
+	<bean id="filesApi" class="com.adks.dubbo.providers.admin.news.FilesApiImpl" />
+	<bean id="friendlylinkApi" class="com.adks.dubbo.providers.admin.news.FriendlylinkApiImpl" />
+	<bean id="operaApi" class="com.adks.dubbo.providers.admin.operation.OperaApiImpl" />
+	<bean id="sysNoticeApi" class="com.adks.dubbo.providers.admin.news.SysNoticeApiImpl" />
+	<bean id="logApi" class="com.adks.dubbo.providers.admin.log.LogApiImpl" />
+	<!-- 总校前台服务 -->
+	<bean id="webUserApi" class="com.adks.dubbo.providers.web.user.UserApiImpl" />
+	<bean id="webCourseApi" class="com.adks.dubbo.providers.web.course.CourseApiImpl" />
+	<bean id="webCourseUserApi" class="com.adks.dubbo.providers.web.course.CourseUserApiImpl" />
+	<bean id="webGradeApi" class="com.adks.dubbo.providers.web.grade.GradeApiImpl" />
+	<bean id="webGradeWorkApi" class="com.adks.dubbo.providers.web.grade.GradeWorkApiImpl" />
+	<bean id="webGradeExamApi" class="com.adks.dubbo.providers.web.grade.GradeExamApiImpl" />
+	<bean id="webGradeUserApi" class="com.adks.dubbo.providers.web.grade.GradeUserApiImpl" />
+	<bean id="webGradeCourseApi" class="com.adks.dubbo.providers.web.grade.GradeCourseApiImpl" />
+	<bean id="webAdvertiseApi" class="com.adks.dubbo.providers.web.news.AdvertiseApiImpl" />
+	<bean id="webNewsApi" class="com.adks.dubbo.providers.web.news.NewsApiImpl" />
+	<bean id="webNewsSortApi" class="com.adks.dubbo.providers.web.news.NewsSortApiImpl" />
+	<bean id="webOrgApi" class="com.adks.dubbo.providers.web.org.OrgApiImpl" />
+	<bean id="webAuthorApi" class="com.adks.dubbo.providers.web.author.AuthorApiImpl" />
+	<bean id="webZhijiApi" class="com.adks.dubbo.providers.web.zhiji.ZhijiApiImpl" />
+	<bean id="webUsercollecttionApi" class="com.adks.dubbo.providers.web.user.UsercollectionApiImpl" />
+	<bean id="searchApi" class="com.adks.dubbo.providers.web.search.SearchApiImpl" />
+
+	<!-- app -->
+	<bean id="authorAppApi" class="com.adks.dubbo.providers.app.author.AuthorAppApiImpl" />
+
+	<bean id="courseAppApi" class="com.adks.dubbo.providers.app.course.CourseAppApiImpl" />
+	<bean id="courseSortAppApi" class="com.adks.dubbo.providers.app.course.CourseSortAppApiImpl" />
+	<bean id="courseUserAppApi" class="com.adks.dubbo.providers.app.course.CourseUserAppApiImpl" />
+
+	<bean id="gradeAppApi" class="com.adks.dubbo.providers.app.grade.GradeAppApiImpl" />
+	<bean id="gradeUserAppApi" class="com.adks.dubbo.providers.app.grade.GradeUserAppApiImpl" />
+
+	<bean id="newsAppApi" class="com.adks.dubbo.providers.app.news.NewsAppApiImpl" />
+	<bean id="newsUserAppApi" class="com.adks.dubbo.providers.app.news.NewsUserAppApiImpl" />
+
+	<bean id="userAppApi" class="com.adks.dubbo.providers.app.user.UserAppApiImpl" />
+	<bean id="userCollectionAppApi"
+		class="com.adks.dubbo.providers.app.user.UserCollectionAppApiImpl" />
+	<bean id="userOnlineAppApi" class="com.adks.dubbo.providers.app.user.UserOnlineAppApiImpl" />
+
+	<bean id="versionAppApi" class="com.adks.dubbo.providers.app.version.VersionAppApiImpl" />
+
+	<bean id="bindAppApi" class="com.adks.dubbo.providers.app.bind.BindAppApiImpl" />
+
+	<!--提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="service_lllnet_provider" />
+	<!--使用multicast广播注册中心，暴露服务地址 -->
+	<dubbo:registry address="${dubbo.zookeeper.url}" />
+	<!--用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="${dubbo.port}"
+		accesslog="/tmp/service_lllnet/access.log" />
+
+	<!--后台：声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.user.UserApi"
+		ref="userAdminApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.role.UserroleApi"
+		ref="userroleApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.user.UserOnlineApi"
+	ref="userOnlineApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.menu.MenuApi"
+		ref="menuApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.org.OrgApi"
+		ref="orgApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.grade.GradeApi"
+		ref="gradeApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.grade.GradeUserApi"
+		ref="gradeUserApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeCourseApi"
+		ref="gradeCourseApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.grade.GradeExamApi"
+		ref="gradeExamApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.grade.GradeWorkApi"
+		ref="gradeWorkApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.grade.GradeNoticeApi"
+		ref="gradeNoticeApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.enumeration.EnumerationApi"
+		ref="enumerationApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.course.CourseSortApi"
+		ref="courseSortApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.course.CourseApi"
+		ref="courseApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.course.CourseSaveFileApi"
+		ref="courseSaveFileApi"  retries="0" timeout="900000"/>
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.course.CourseUserApi"
+		ref="courseUserApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.zhiji.ZhijiApi"
+		ref="zhijiApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.question.QuestionApi"
+		ref="questionApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.question.QuestionSortApi"
+		ref="questionSortApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.paper.PaperQuestionApi"
+		ref="paperQuestionApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.paper.PaperApi"
+		ref="paperApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.exam.ExamApi"
+		ref="examApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.exam.ExamPaperApi"
+		ref="examPaperApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.role.RoleApi"
+		ref="roleApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.news.AdvertiseApi"
+		ref="advertiseApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.news.FilesApi"
+		ref="filesApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.admin.news.FriendlylinkApi"
+		ref="friendlylinkApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.news.NewsApi"
+		ref="newsApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.news.NewsSortApi"
+		ref="newsSortApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.author.AuthorApi"
+		ref="authorApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.operation.OperaApi"
+		ref="operaApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.news.SysNoticeApi"
+		ref="sysNoticeApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.admin.log.LogApi"
+		ref="logApi" timeout="30000" />
+	<!-- 前台服务 -->
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.web.user.UserApi"
+		ref="webUserApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.course.CourseApi"
+		ref="webCourseApi" timeout="30000" />
+	<dubbo:service
+		interface=" com.adks.dubbo.api.interfaces.web.course.CourseUserApi"
+		ref="webCourseUserApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.grade.GradeApi"
+		ref="webGradeApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.grade.GradeUserApi"
+		ref="webGradeUserApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.grade.GradeWorkApi"
+		ref="webGradeWorkApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.grade.GradeExamApi"
+		ref="webGradeExamApi" timeout="30000" />
+	<dubbo:service
+		interface=" com.adks.dubbo.api.interfaces.web.grade.GradeCourseApi"
+		ref="webGradeCourseApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.news.AdvertiseApi"
+		ref="webAdvertiseApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.news.NewsApi"
+		ref="webNewsApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.news.NewsSortApi"
+		ref="webNewsSortApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.org.OrgApi"
+		ref="webOrgApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.author.AuthorApi"
+		ref="webAuthorApi" timeout="30000" />
+	<dubbo:service interface=" com.adks.dubbo.api.interfaces.web.zhiji.ZhijiApi"
+		ref="webZhijiApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.web.search.SearchApi"
+		ref="searchApi" timeout="30000" />
+	<dubbo:service
+		interface=" com.adks.dubbo.api.interfaces.web.user.UserconllectionApi"
+		ref="webUsercollecttionApi" timeout="30000" />
+
+	<!-- app -->
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.author.AuthorAppApi"
+		ref="authorAppApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.course.CourseAppApi"
+		ref="courseAppApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.app.course.CourseSortAppApi"
+		ref="courseSortAppApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.app.course.CourseUserAppApi"
+		ref="courseUserAppApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.grade.GradeAppApi"
+		ref="gradeAppApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.app.grade.GradeUserAppApi"
+		ref="gradeUserAppApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.news.NewsAppApi"
+		ref="newsAppApi" timeout="30000" />
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.news.NewsUserAppApi"
+		ref="newsUserAppApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.user.UserAppApi"
+		ref="userAppApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.app.user.UserCollectionAppApi"
+		ref="userCollectionAppApi" timeout="30000" />
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.app.user.UserOnlineAppApi"
+		ref="userOnlineAppApi" timeout="30000" />
+
+	<dubbo:service
+		interface="com.adks.dubbo.api.interfaces.app.version.VersionAppApi"
+		ref="versionAppApi" timeout="30000" />
+
+	<dubbo:service interface="com.adks.dubbo.api.interfaces.app.bind.BindAppApi"
+		ref="bindAppApi" timeout="30000" />
+</beans>
